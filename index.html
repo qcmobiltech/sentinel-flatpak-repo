@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sentinel Linux Official Flatpak Repository</title>
+  <meta name="description" content="Official public application repository for Sentinel Linux. Sandboxed, verified, and isolated into security realms.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0A0D12;
+      --card-bg: #121822;
+      --card-border: #1E293B;
+      --cyan-accent: #00F0FF;
+      --green-accent: #10B981;
+      --purple-accent: #8B5CF6;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    .container { max-width: 960px; margin: 0 auto; }
+    .header { text-align: center; margin-bottom: 50px; }
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border-radius: 9999px;
+      background: rgba(0, 240, 255, 0.1);
+      color: var(--cyan-accent);
+      border: 1px solid rgba(0, 240, 255, 0.3);
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #FFF, #94A3B8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto;
+    }
+    .install-box {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .install-title {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--cyan-accent);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .code-snippet {
+      background: #06080B;
+      border: 1px solid #1E2633;
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      color: #38BDF8;
+      overflow-x: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 24px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(0, 240, 255, 0.4);
+    }
+    .card-tag {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+    .tag-user { background: rgba(16, 185, 129, 0.15); color: #10B981; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .tag-dev { background: rgba(56, 189, 248, 0.15); color: #38BDF8; border: 1px solid rgba(56, 189, 248, 0.3); }
+    .tag-crypto { background: rgba(139, 92, 246, 0.15); color: #A78BFA; border: 1px solid rgba(139, 92, 246, 0.3); }
+    .tag-office { background: rgba(245, 158, 11, 0.15); color: #FBBF24; border: 1px solid rgba(245, 158, 11, 0.3); }
+    .card h3 { font-size: 1.2rem; margin-bottom: 6px; }
+    .card p { font-size: 0.88rem; color: var(--text-muted); }
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.85rem;
+      color: #64748B;
+      border-top: 1px solid var(--card-border);
+      padding-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="badge">SECURED • MANAGED • CONNECTED</div>
+      <h1>Sentinel Linux Official Flatpaks</h1>
+      <p class="subtitle">General consumer and workstation application repository for Sentinel Linux. All applications are delivered with cryptographic signatures and strict realm confinement.</p>
+    </header>
+
+    <div class="install-box">
+      <div class="install-title">Add Remote to Sentinel Linux or Any Flatpak Host</div>
+      <div class="code-snippet">
+        <code>flatpak remote-add --if-not-exists sentinel https://qcmobiltech.github.io/sentinel-flatpak-repo/sentinel.flatpakrepo</code>
+      </div>
+    </div>
+
+    <h2 style="font-size: 1.3rem; margin-top: 40px; margin-bottom: 10px;">Verified General Applications</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="card-tag tag-user">User Realm</span>
+        <h3>Sentinel Files</h3>
+        <p>Memory-safe high performance file manager built in Rust & Slint. Sandboxed with portal-mediated filesystem access.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-dev">Dev Sandbox</span>
+        <h3>Sentinel Terminal</h3>
+        <p>Hardened terminal emulator executing in unprivileged user namespaces with granular capability restrictions.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-crypto">Crypto Realm</span>
+        <h3>Sentinel Vault</h3>
+        <p>Hardware-anchored credential and key manager communicating directly with TPM 2.0 PKCS#11 with zero raw networking.</p>
+      </div>
+      <div class="card">
+        <span class="card-tag tag-office">Office Realm</span>
+        <h3>Sentinel Office</h3>
+        <p>Confined productivity suite with network capabilities disabled and document portal access strictly mediated.</p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Maintained by QC Mobiltech • Built for Sentinel Linux 2027.0 Platform</p>
+      <p style="margin-top: 4px; font-size: 0.75rem; color: #475569;">Company-exclusive engineering applications are strictly quarantined and delivered via the private Engineer repository.</p>
+    </footer>
+  </div>
+</body>
+</html>

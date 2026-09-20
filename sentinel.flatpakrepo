@@ -1,0 +1,9 @@
+[Flatpak Repo]
+Title=Sentinel Linux Official Applications
+Url=https://qcmobiltech.github.io/sentinel-flatpak-repo/repo/
+Homepage=https://qcmobiltech.tech
+Comment=Official Sandboxed Applications for Sentinel Linux
+Description=Verified public sandboxed applications for Sentinel Linux desktop and workstation environments.
+Icon=https://qcmobiltech.github.io/sentinel-flatpak-repo/assets/sentinel-icon.png
+DefaultBranch=stable
+GPGKey=

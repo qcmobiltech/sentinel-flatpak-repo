@@ -1,0 +1,55 @@
+name: Build & Publish Flatpak Repository
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install Flatpak & OSTree Tooling
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y flatpak flatpak-builder ostree
+
+      - name: Initialize / Update OSTree Repository
+        run: |
+          mkdir -p repo
+          if [ ! -f repo/config ]; then
+            ostree init --mode=archive-z2 --repo=repo
+          fi
+
+      - name: Generate OSTree Summary
+        run: |
+          ostree summary -u --repo=repo
+
+      - name: Setup GitHub Pages Staging
+        run: |
+          mkdir -p _site
+          cp -r repo _site/
+          cp -r assets _site/
+          cp sentinel.flatpakrepo _site/
+          cp index.html _site/
+
+      - name: Upload GitHub Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

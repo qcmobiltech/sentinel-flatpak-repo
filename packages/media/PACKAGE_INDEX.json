@@ -1,0 +1,208 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-media-framework": {
+      "archive": "sentinel-media-framework-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "meta-package",
+      "description": "Sentinel Linux system-wide media capability coordinator meta-package",
+      "dependencies": [
+        "sentinel-media-core",
+        "sentinel-media-service",
+        "sentinel-media-api",
+        "sentinel-media-codecs",
+        "sentinel-media-formats",
+        "sentinel-media-images",
+        "sentinel-media-video",
+        "sentinel-media-audio",
+        "sentinel-media-hwaccel",
+        "sentinel-media-gstreamer",
+        "sentinel-media-ffmpeg",
+        "sentinel-media-pipewire",
+        "sentinel-media-heif"
+      ],
+      "sha256": "13f35d6b9ca0cce6bcbb847337011ece68a74ab7e67fa70f7942997deeb2942d",
+      "size_bytes": 9633
+    },
+    "sentinel-media-core": {
+      "archive": "sentinel-media-core-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "runtime-library",
+      "description": "Core multimedia types, capability models, and MIME registry",
+      "dependencies": [],
+      "sha256": "ace649f3dffc0fa34fc01829b3d8ecb0e8e9f052f2199534e83493e869a483db",
+      "size_bytes": 4282
+    },
+    "sentinel-media-service": {
+      "archive": "sentinel-media-service-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "system-daemon",
+      "description": "Sentinel Media Service coordination daemon and ctl utility",
+      "dependencies": [
+        "sentinel-media-core",
+        "sentinel-media-hwaccel"
+      ],
+      "sha256": "e3adec6c677aaaf860f0f2eb1970eb3c735ded347857e31434e0fa2ff3dfe1fc",
+      "size_bytes": 2045407
+    },
+    "sentinel-media-api": {
+      "archive": "sentinel-media-api-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "runtime-library",
+      "description": "Sentinel Media developer-facing Rust runtime library",
+      "dependencies": [
+        "sentinel-media-core"
+      ],
+      "sha256": "d8a1303695e635f91a86642f854d42fe678707337ee85600eb9b83da3a9d93f9",
+      "size_bytes": 1208
+    },
+    "sentinel-media-core-dev": {
+      "archive": "sentinel-media-core-dev-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "development",
+      "description": "Headers and pkg-config for sentinel-media-core",
+      "dependencies": [
+        "sentinel-media-core"
+      ],
+      "sha256": "4991454bb06e0946311df5020c55bc8033574bbb6e0c20f346e2d026a2769a54",
+      "size_bytes": 734
+    },
+    "sentinel-media-api-dev": {
+      "archive": "sentinel-media-api-dev-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "development",
+      "description": "Headers, bindings, and pkg-config for sentinel-media-api",
+      "dependencies": [
+        "sentinel-media-api",
+        "sentinel-media-core-dev"
+      ],
+      "sha256": "485b7e5f976a5a0e4edc06246b1e773ca10e423b32557387bbd83e4b18ac30e5",
+      "size_bytes": 742
+    },
+    "sentinel-media-codecs": {
+      "archive": "sentinel-media-codecs-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "codec-bundle",
+      "description": "Approved Tier 1 and Tier 2 audio, video, and image codecs",
+      "dependencies": [
+        "sentinel-media-core"
+      ],
+      "sha256": "75998fa594ac124ef1f5e85298e2b74f1adfd36a632ce8e7af578370996e5c0f",
+      "size_bytes": 882
+    },
+    "sentinel-media-formats": {
+      "archive": "sentinel-media-formats-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "format-bundle",
+      "description": "Container format definitions and demuxing policies",
+      "dependencies": [
+        "sentinel-media-core"
+      ],
+      "sha256": "4f4eb3b6a4e6531c8716c14801f0bcf1a4323ca6b1bd803ae540e001278bb1a7",
+      "size_bytes": 441
+    },
+    "sentinel-media-images": {
+      "archive": "sentinel-media-images-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "image-bundle",
+      "description": "Image decoding/encoding integration (JPEG, PNG, WebP, GIF, TIFF, QOI)",
+      "dependencies": [
+        "sentinel-media-core"
+      ],
+      "sha256": "b2efc231e768b363558e5f9b10ee13d0a60c64e6ef4e9c84c377dbe0fc679056",
+      "size_bytes": 477
+    },
+    "sentinel-media-video": {
+      "archive": "sentinel-media-video-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "video-bundle",
+      "description": "Video pipeline presets and pixel format specifications",
+      "dependencies": [
+        "sentinel-media-core",
+        "sentinel-media-codecs"
+      ],
+      "sha256": "18dcd0494fb69b5ec46f936d37dbad626c0e6b067af887da48efeb8bbf289be7",
+      "size_bytes": 448
+    },
+    "sentinel-media-audio": {
+      "archive": "sentinel-media-audio-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "audio-bundle",
+      "description": "Audio channel layout handling and transport routing",
+      "dependencies": [
+        "sentinel-media-core"
+      ],
+      "sha256": "e392993b54f3e6e70f9bd1eb1a64250a409cfa24d84d93db238472639569bbe7",
+      "size_bytes": 440
+    },
+    "sentinel-media-hwaccel": {
+      "archive": "sentinel-media-hwaccel-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "hardware-acceleration",
+      "description": "VA-API, Vulkan Video, and DRM GPU acceleration interfaces",
+      "dependencies": [
+        "sentinel-media-core"
+      ],
+      "sha256": "0601b6f8a48c8fd03c2fb428dadc3826da25443dc6fc3c4eedb0fd91d856f071",
+      "size_bytes": 890
+    },
+    "sentinel-media-gstreamer": {
+      "archive": "sentinel-media-gstreamer-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "multimedia-framework",
+      "description": "GStreamer core, plugins (base, good, bad, ugly), and gst-libav integration",
+      "dependencies": [
+        "sentinel-media-core"
+      ],
+      "sha256": "cd344fae94d65799580dbd68fd72dfef13a8f5c8cd224f7e037d0b9376ecf600",
+      "size_bytes": 478
+    },
+    "sentinel-media-ffmpeg": {
+      "archive": "sentinel-media-ffmpeg-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "multimedia-stack",
+      "description": "FFmpeg library integration (libavcodec, libavformat, libavutil)",
+      "dependencies": [
+        "sentinel-media-core"
+      ],
+      "sha256": "56ce9dcdaa48b958a0f7f86d23a9a0ba11e2d89298ee1e9e8eafd636beeae045",
+      "size_bytes": 462
+    },
+    "sentinel-media-pipewire": {
+      "archive": "sentinel-media-pipewire-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "audio-video-transport",
+      "description": "PipeWire system multimedia transport integration",
+      "dependencies": [
+        "sentinel-media-core"
+      ],
+      "sha256": "02090a85b79a796371a197b8f1110066a64c72a788b20a016688763957644dc4",
+      "size_bytes": 449
+    },
+    "sentinel-media-heif": {
+      "archive": "sentinel-media-heif-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "codec-extension",
+      "description": "HEIF / HEIC container and image codec support",
+      "dependencies": [
+        "sentinel-media-core",
+        "sentinel-media-images"
+      ],
+      "sha256": "2df5e419060f74dadd4e542414fb7fc48d7eca4bb9b010b624c2988558e8cc8a",
+      "size_bytes": 454
+    },
+    "org.sentinel.Media.Runtime": {
+      "archive": "org.sentinel.Media.Runtime-2027.0.0-x86_64.flatpakref",
+      "version": "2027.0.0",
+      "type": "flatpak-runtime-extension",
+      "description": "Sentinel Media Runtime extension for Flatpak sandboxes",
+      "dependencies": [
+        "sentinel-media-framework"
+      ],
+      "sha256": "2954e52acec6ffe9099bfa5d299adad0e262a73d6a58d9b949bf6b872483c0cf",
+      "size_bytes": 1114
+    }
+  }
+}

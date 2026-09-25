@@ -1,0 +1,17 @@
+13f35d6b9ca0cce6bcbb847337011ece68a74ab7e67fa70f7942997deeb2942d  sentinel-media-framework-2027.0.0-x86_64.spk
+ace649f3dffc0fa34fc01829b3d8ecb0e8e9f052f2199534e83493e869a483db  sentinel-media-core-2027.0.0-x86_64.spk
+e3adec6c677aaaf860f0f2eb1970eb3c735ded347857e31434e0fa2ff3dfe1fc  sentinel-media-service-2027.0.0-x86_64.spk
+d8a1303695e635f91a86642f854d42fe678707337ee85600eb9b83da3a9d93f9  sentinel-media-api-2027.0.0-x86_64.spk
+4991454bb06e0946311df5020c55bc8033574bbb6e0c20f346e2d026a2769a54  sentinel-media-core-dev-2027.0.0-x86_64.spk
+485b7e5f976a5a0e4edc06246b1e773ca10e423b32557387bbd83e4b18ac30e5  sentinel-media-api-dev-2027.0.0-x86_64.spk
+75998fa594ac124ef1f5e85298e2b74f1adfd36a632ce8e7af578370996e5c0f  sentinel-media-codecs-2027.0.0-x86_64.spk
+4f4eb3b6a4e6531c8716c14801f0bcf1a4323ca6b1bd803ae540e001278bb1a7  sentinel-media-formats-2027.0.0-x86_64.spk
+b2efc231e768b363558e5f9b10ee13d0a60c64e6ef4e9c84c377dbe0fc679056  sentinel-media-images-2027.0.0-x86_64.spk
+18dcd0494fb69b5ec46f936d37dbad626c0e6b067af887da48efeb8bbf289be7  sentinel-media-video-2027.0.0-x86_64.spk
+e392993b54f3e6e70f9bd1eb1a64250a409cfa24d84d93db238472639569bbe7  sentinel-media-audio-2027.0.0-x86_64.spk
+0601b6f8a48c8fd03c2fb428dadc3826da25443dc6fc3c4eedb0fd91d856f071  sentinel-media-hwaccel-2027.0.0-x86_64.spk
+cd344fae94d65799580dbd68fd72dfef13a8f5c8cd224f7e037d0b9376ecf600  sentinel-media-gstreamer-2027.0.0-x86_64.spk
+56ce9dcdaa48b958a0f7f86d23a9a0ba11e2d89298ee1e9e8eafd636beeae045  sentinel-media-ffmpeg-2027.0.0-x86_64.spk
+02090a85b79a796371a197b8f1110066a64c72a788b20a016688763957644dc4  sentinel-media-pipewire-2027.0.0-x86_64.spk
+2df5e419060f74dadd4e542414fb7fc48d7eca4bb9b010b624c2988558e8cc8a  sentinel-media-heif-2027.0.0-x86_64.spk
+2954e52acec6ffe9099bfa5d299adad0e262a73d6a58d9b949bf6b872483c0cf  org.sentinel.Media.Runtime-2027.0.0-x86_64.flatpakref

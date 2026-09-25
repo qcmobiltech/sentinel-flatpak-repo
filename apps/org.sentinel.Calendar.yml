@@ -1,0 +1,32 @@
+app-id: org.sentinel.Calendar
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: sentinel-calendar
+finish-args:
+  # User Realm Confinement: Zero telemetry, encrypted local storage, sandboxed operation
+  - --share=ipc
+  - --share=network
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --filesystem=xdg-config/sentinel/calendar:create
+  - --filesystem=xdg-data/sentinel/calendar:create
+  - --talk-name=org.freedesktop.Notifications
+modules:
+  - name: sentinel-calendar
+    buildsystem: simple
+    build-commands:
+      - install -D -m755 bin/sentinel-calendar /app/bin/sentinel-calendar
+      - install -D -m644 packaging/org.sentinel.Calendar.desktop /app/share/applications/org.sentinel.Calendar.desktop
+      - install -D -m644 assets/org.sentinel.Calendar.svg /app/share/icons/hicolor/scalable/apps/org.sentinel.Calendar.svg
+      - install -D -m644 packaging/org.sentinel.Calendar.metainfo.xml /app/share/metainfo/org.sentinel.Calendar.metainfo.xml
+    sources:
+      - type: file
+        path: bin/sentinel-calendar
+      - type: file
+        path: packaging/org.sentinel.Calendar.desktop
+      - type: file
+        path: assets/org.sentinel.Calendar.svg
+      - type: file
+        path: packaging/org.sentinel.Calendar.metainfo.xml

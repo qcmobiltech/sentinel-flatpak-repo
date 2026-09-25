@@ -1,0 +1,21 @@
+{
+  "sentinel_version": "2027.0.0",
+  "generated_at": "2026-09-25T19:42:55.681202+00:00",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-calendar": {
+      "archive": "sentinel-calendar-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "application",
+      "description": "Native, local-first calendar and unified scheduling platform for Sentinel Linux",
+      "security_realm": "UserRealm",
+      "app_id": "org.sentinel.Calendar",
+      "dependencies": [
+        "glibc>=2.35",
+        "libsqlite3>=3.35"
+      ],
+      "sha256": "40ea2d9807d7a048432da01fcfb5f82fdd05630bc5f9dd1e8e405a17ac5c06ba",
+      "size_bytes": 13998495
+    }
+  }
+}

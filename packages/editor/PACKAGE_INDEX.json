@@ -1,0 +1,21 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-editor": {
+      "archive": "sentinel-editor-1.0.0-x86_64.spk",
+      "version": "1.0.0",
+      "type": "application",
+      "description": "Official Sentinel Editor for Sentinel Linux (Native Rust + Slint Advanced Text Editor and Development Workspace)",
+      "security_realm": "UserRealm",
+      "app_id": "org.sentinel.Editor",
+      "dependencies": [
+        "sentinel-developer-framework-core",
+        "sentinel-developer-framework-slint"
+      ],
+      "sha256": "0e5c01ac07fb8465d7d19558668cfab8bd48e8609a707c910853c755d9a5042a",
+      "size_bytes": 12717630
+    }
+  }
+}

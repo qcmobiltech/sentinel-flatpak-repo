@@ -1,0 +1,37 @@
+app-id: org.sentinel.Mail
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: sentinel-mail
+finish-args:
+  # Sandbox containment for Sentinel Mail
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --share=network
+  - --filesystem=host
+  - --filesystem=xdg-config/sentinel:create
+  - --filesystem=~/.local/share/sentinel-calendar:rw
+  - --talk-name=org.freedesktop.portal.Desktop
+  - --talk-name=org.freedesktop.portal.FileChooser
+  - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.sentinel.Vault
+  - --talk-name=org.sentinel.Calendar
+modules:
+  - name: sentinel-mail
+    buildsystem: simple
+    build-commands:
+      - install -D -m755 bin/sentinel-mail /app/bin/sentinel-mail
+      - install -D -m644 packaging/org.sentinel.Mail.desktop /app/share/applications/org.sentinel.Mail.desktop
+      - install -D -m644 assets/org.sentinel.Mail.svg /app/share/icons/hicolor/scalable/apps/org.sentinel.Mail.svg
+      - install -D -m644 packaging/org.sentinel.Mail.metainfo.xml /app/share/metainfo/org.sentinel.Mail.metainfo.xml
+    sources:
+      - type: file
+        path: bin/sentinel-mail
+      - type: file
+        path: packaging/org.sentinel.Mail.desktop
+      - type: file
+        path: assets/org.sentinel.Mail.svg
+      - type: file
+        path: packaging/org.sentinel.Mail.metainfo.xml

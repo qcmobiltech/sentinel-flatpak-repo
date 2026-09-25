@@ -1,0 +1,22 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-mail": {
+      "archive": "sentinel-mail-1.0.0-x86_64.spk",
+      "version": "1.0.0",
+      "type": "application",
+      "description": "Official Sentinel Mail for Sentinel Linux (Native Rust + Slint Advanced Email Client with End-to-End Encryption and Sentinel-Calendar Sync)",
+      "security_realm": "UserRealm",
+      "app_id": "org.sentinel.Mail",
+      "dependencies": [
+        "sentinel-developer-framework-core",
+        "sentinel-developer-framework-slint",
+        "sentinel-calendar"
+      ],
+      "sha256": "263a960d832bd9d1934e5ddd43f4e8fc1ab63e724259ca704b0a6fb156210f37",
+      "size_bytes": 12854766
+    }
+  }
+}

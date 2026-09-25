@@ -1,0 +1,16 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-calculator": {
+      "archive": "sentinel-calculator-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "application",
+      "description": "Official Sentinel Calculator for Sentinel Linux (Standard, Scientific, Programmer, Converter, Financial)",
+      "dependencies": [],
+      "sha256": "32f7d374970e4524ce19f4a15d5cedec9df25893cf4162bbd966135aa1712bac",
+      "size_bytes": 11418756
+    }
+  }
+}

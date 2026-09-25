@@ -1,0 +1,29 @@
+app-id: org.sentinel.Calculator
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: sentinel-calculator
+finish-args:
+  # User Realm Confinement: Zero telemetry, Zero network, sandboxed offline operation
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --filesystem=xdg-config/sentinel/calculator:create
+modules:
+  - name: sentinel-calculator
+    buildsystem: simple
+    build-commands:
+      - install -D -m755 bin/sentinel-calculator /app/bin/sentinel-calculator
+      - install -D -m644 packaging/org.sentinel.Calculator.desktop /app/share/applications/org.sentinel.Calculator.desktop
+      - install -D -m644 assets/org.sentinel.Calculator.svg /app/share/icons/hicolor/scalable/apps/org.sentinel.Calculator.svg
+      - install -D -m644 packaging/org.sentinel.Calculator.metainfo.xml /app/share/metainfo/org.sentinel.Calculator.metainfo.xml
+    sources:
+      - type: file
+        path: bin/sentinel-calculator
+      - type: file
+        path: packaging/org.sentinel.Calculator.desktop
+      - type: file
+        path: assets/org.sentinel.Calculator.svg
+      - type: file
+        path: packaging/org.sentinel.Calculator.metainfo.xml

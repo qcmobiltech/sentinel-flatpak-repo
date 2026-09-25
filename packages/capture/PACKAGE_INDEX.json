@@ -1,0 +1,21 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-capture": {
+      "archive": "sentinel-capture-1.0.0-x86_64.spk",
+      "version": "1.0.0",
+      "type": "application",
+      "description": "Official Sentinel Capture for Sentinel Linux (Screenshots, Screen & Audio Recording, Studio Annotation)",
+      "security_realm": "UserRealm",
+      "app_id": "org.sentinel.Capture",
+      "dependencies": [
+        "glibc>=2.35",
+        "gstreamer1.0>=1.20"
+      ],
+      "sha256": "25a6018348343645c7fa85b3bafc433cbb84fe2d89092e8ea894f67c2354c7c5",
+      "size_bytes": 10878248
+    }
+  }
+}

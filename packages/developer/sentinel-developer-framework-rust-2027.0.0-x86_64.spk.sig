@@ -1,0 +1,4 @@
+SENTINEL-SIG-2027.0
+PACKAGE: sentinel-developer-framework-rust
+SHA256: a7e5f53b32fcf654078c6ea7fd8a89e3c7430a5fcef0fd0bdb6a035a5b1e3b0b
+TIMESTAMP: 2026-09-25T16:07:32.107348Z

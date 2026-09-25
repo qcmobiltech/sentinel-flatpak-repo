@@ -1,0 +1,17 @@
+28b92a1fb98af990c240bae1bdd6e5486d7a2a24b230bedf0543b18c4871ccd7  sentinel-developer-framework-2027.0.0-x86_64.spk
+6f047700ec2d31e400b2f9122318966945f6ad70e24a318cb722ca8d8f940a2a  sentinel-developer-framework-core-2027.0.0-x86_64.spk
+a7e5f53b32fcf654078c6ea7fd8a89e3c7430a5fcef0fd0bdb6a035a5b1e3b0b  sentinel-developer-framework-rust-2027.0.0-x86_64.spk
+3448f8e4f0e453d0efec3cb9b9243f6f7ef877d09764a1c8d253437a348783dd  sentinel-developer-framework-slint-2027.0.0-x86_64.spk
+2041c82a282f4a13ee23b8962bc8c11d3f2e8d19d6237349577a906b7dfdfa05  sentinel-developer-framework-sdk-2027.0.0-x86_64.spk
+d131c82a4c16b4d78d6db0c0813a535e15a342414dcb72e271d4e2976c6e7433  sentinel-developer-framework-package-2027.0.0-x86_64.spk
+9389b03776f6c83f95f656861096fd9848399baa760abe977873382233704b16  sentinel-developer-framework-test-2027.0.0-x86_64.spk
+3d59b99107b3ea95ff3c815f19e18d09f1cd5d1df278f05bce47bcac44f80e3c  sentinel-developer-framework-desktop-2027.0.0-x86_64.spk
+ffc9be9be44d18992db6e5ffa449f6ad4c320743cd4b219d6c903d4753d7d65e  sentinel-developer-framework-media-2027.0.0-x86_64.spk
+af3ca86b786f994efc7b63d790184d19a151bacece95f7562495da67bb861863  sentinel-developer-framework-flatpak-2027.0.0-x86_64.spk
+a1af8629753b3f99aeea958ab49f3cdc7c08369012cf77254ab0e3658d8a458a  sentinel-developer-framework-system-2027.0.0-x86_64.spk
+949eddc758e2760bf1e1e533ddf6b6a2fdfb97e786075a3f7f7d036fa6c172f9  sentinel-developer-framework-cross-2027.0.0-x86_64.spk
+4a622dfa6be36e81edd89d707616b76bafdb8a5726d7e4d13b47d9a699f8165e  sentinel-developer-framework-docs-2027.0.0-x86_64.spk
+f5d2f572bcfd700adeb6185da052c79ca6814bc7b21577ec310f2f6c15de9d0d  sentinel-developer-profile-desktop-2027.0.0-x86_64.spk
+7184383ed476db144497c3ab3474ee423fb90193b6a3c8ad410e4c11254307de  sentinel-developer-profile-os-2027.0.0-x86_64.spk
+478f31254b0fbf5786f323b1cc67e65f5bcb761f4e4ec1e3e359aec07053fd97  sentinel-developer-profile-enterprise-2027.0.0-x86_64.spk
+35ba72833c96dcbd1ca1b9b64236e351f05fe0ee5a97a21723f94c852021353d  sentinel-developer-profile-embedded-2027.0.0-x86_64.spk

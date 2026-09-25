@@ -1,0 +1,216 @@
+{
+  "sentinel_version": "2027.0.0",
+  "generated_at": "2026-09-25T16:07:32.092426Z",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-developer-framework": {
+      "archive": "sentinel-developer-framework-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "meta-package",
+      "description": "Sentinel Linux 2027.0 complete developer framework meta-package",
+      "dependencies": [
+        "sentinel-developer-framework-core",
+        "sentinel-developer-framework-rust",
+        "sentinel-developer-framework-slint",
+        "sentinel-developer-framework-sdk",
+        "sentinel-developer-framework-package",
+        "sentinel-developer-framework-test",
+        "sentinel-developer-framework-docs"
+      ],
+      "sha256": "28b92a1fb98af990c240bae1bdd6e5486d7a2a24b230bedf0543b18c4871ccd7",
+      "size_bytes": 2397
+    },
+    "sentinel-developer-framework-core": {
+      "archive": "sentinel-developer-framework-core-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "toolchain",
+      "description": "Core C/C++ compiler and build system baseline (GCC, Binutils, Make, pkgconf, CMake, Ninja, Meson)",
+      "dependencies": [],
+      "sha256": "6f047700ec2d31e400b2f9122318966945f6ad70e24a318cb722ca8d8f940a2a",
+      "size_bytes": 1030
+    },
+    "sentinel-developer-framework-rust": {
+      "archive": "sentinel-developer-framework-rust-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "toolchain",
+      "description": "Rust programming language toolchain, cargo, and rust-analyzer LSP",
+      "dependencies": [
+        "sentinel-developer-framework-core"
+      ],
+      "sha256": "a7e5f53b32fcf654078c6ea7fd8a89e3c7430a5fcef0fd0bdb6a035a5b1e3b0b",
+      "size_bytes": 1129
+    },
+    "sentinel-developer-framework-slint": {
+      "archive": "sentinel-developer-framework-slint-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "framework",
+      "description": "Slint UI framework tooling, compiler, LSP, and Sentinel Dark/Orange theme tokens",
+      "dependencies": [
+        "sentinel-developer-framework-rust"
+      ],
+      "sha256": "3448f8e4f0e453d0efec3cb9b9243f6f7ef877d09764a1c8d253437a348783dd",
+      "size_bytes": 1493
+    },
+    "sentinel-developer-framework-sdk": {
+      "archive": "sentinel-developer-framework-sdk-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "sdk",
+      "description": "Sentinel Linux 2027.0 SDK headers, CMake config, pkg-config, sysroots",
+      "dependencies": [
+        "sentinel-developer-framework-core"
+      ],
+      "sha256": "2041c82a282f4a13ee23b8962bc8c11d3f2e8d19d6237349577a906b7dfdfa05",
+      "size_bytes": 2803
+    },
+    "sentinel-developer-framework-package": {
+      "archive": "sentinel-developer-framework-package-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "developer-tools",
+      "description": "Sentinel official development CLI tools: sentinel-dev, sentinel-build, sentinel-package, sentinel-create-app",
+      "dependencies": [
+        "sentinel-developer-framework-core"
+      ],
+      "sha256": "d131c82a4c16b4d78d6db0c0813a535e15a342414dcb72e271d4e2976c6e7433",
+      "size_bytes": 1919673
+    },
+    "sentinel-developer-framework-test": {
+      "archive": "sentinel-developer-framework-test-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "testing-tools",
+      "description": "Sentinel test orchestrator (sentinel-test) for Cargo, CTest, and pytest suites",
+      "dependencies": [
+        "sentinel-developer-framework-package"
+      ],
+      "sha256": "9389b03776f6c83f95f656861096fd9848399baa760abe977873382233704b16",
+      "size_bytes": 452770
+    },
+    "sentinel-developer-framework-desktop": {
+      "archive": "sentinel-developer-framework-desktop-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "desktop-libraries",
+      "description": "Sentinel Wayland, Vulkan, OpenGL, DBus, and portal development interfaces",
+      "dependencies": [
+        "sentinel-developer-framework-sdk"
+      ],
+      "sha256": "3d59b99107b3ea95ff3c815f19e18d09f1cd5d1df278f05bce47bcac44f80e3c",
+      "size_bytes": 1161
+    },
+    "sentinel-developer-framework-media": {
+      "archive": "sentinel-developer-framework-media-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "multimedia-libraries",
+      "description": "Sentinel Media Framework development headers, GStreamer, FFmpeg, PipeWire interfaces",
+      "dependencies": [
+        "sentinel-developer-framework-sdk"
+      ],
+      "sha256": "ffc9be9be44d18992db6e5ffa449f6ad4c320743cd4b219d6c903d4753d7d65e",
+      "size_bytes": 1161
+    },
+    "sentinel-developer-framework-flatpak": {
+      "archive": "sentinel-developer-framework-flatpak-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "sandboxing",
+      "description": "Flatpak builder, OSTree, and Sentinel Flatpak SDK / runtime manifests",
+      "dependencies": [
+        "sentinel-developer-framework-core"
+      ],
+      "sha256": "af3ca86b786f994efc7b63d790184d19a151bacece95f7562495da67bb861863",
+      "size_bytes": 1221
+    },
+    "sentinel-developer-framework-system": {
+      "archive": "sentinel-developer-framework-system-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "os-development",
+      "description": "Sentinel OS, Linux kernel headers, bootloader, filesystem creation, and dtc tools",
+      "dependencies": [
+        "sentinel-developer-framework-core"
+      ],
+      "sha256": "a1af8629753b3f99aeea958ab49f3cdc7c08369012cf77254ab0e3658d8a458a",
+      "size_bytes": 1023
+    },
+    "sentinel-developer-framework-cross": {
+      "archive": "sentinel-developer-framework-cross-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "cross-compilation",
+      "description": "Multi-architecture cross-compilers, sysroots, and toolchain configurations (aarch64, armhf, riscv64)",
+      "dependencies": [
+        "sentinel-developer-framework-core"
+      ],
+      "sha256": "949eddc758e2760bf1e1e533ddf6b6a2fdfb97e786075a3f7f7d036fa6c172f9",
+      "size_bytes": 1108
+    },
+    "sentinel-developer-framework-docs": {
+      "archive": "sentinel-developer-framework-docs-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "documentation",
+      "description": "Documentation generation tooling, Doxygen, Sphinx, Rustdoc, and manual pages",
+      "dependencies": [],
+      "sha256": "4a622dfa6be36e81edd89d707616b76bafdb8a5726d7e4d13b47d9a699f8165e",
+      "size_bytes": 1824
+    },
+    "sentinel-developer-profile-desktop": {
+      "archive": "sentinel-developer-profile-desktop-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "profile",
+      "description": "Profile: Sentinel Desktop Application Developer",
+      "dependencies": [
+        "sentinel-developer-framework-core",
+        "sentinel-developer-framework-rust",
+        "sentinel-developer-framework-slint",
+        "sentinel-developer-framework-desktop",
+        "sentinel-developer-framework-media",
+        "sentinel-developer-framework-flatpak",
+        "sentinel-developer-framework-sdk",
+        "sentinel-developer-framework-package",
+        "sentinel-developer-framework-test"
+      ],
+      "sha256": "f5d2f572bcfd700adeb6185da052c79ca6814bc7b21577ec310f2f6c15de9d0d",
+      "size_bytes": 542
+    },
+    "sentinel-developer-profile-os": {
+      "archive": "sentinel-developer-profile-os-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "profile",
+      "description": "Profile: Sentinel OS, Kernel, and System Service Developer",
+      "dependencies": [
+        "sentinel-developer-framework-core",
+        "sentinel-developer-framework-rust",
+        "sentinel-developer-framework-system",
+        "sentinel-developer-framework-cross",
+        "sentinel-developer-framework-sdk",
+        "sentinel-developer-framework-package",
+        "sentinel-developer-framework-test"
+      ],
+      "sha256": "7184383ed476db144497c3ab3474ee423fb90193b6a3c8ad410e4c11254307de",
+      "size_bytes": 525
+    },
+    "sentinel-developer-profile-enterprise": {
+      "archive": "sentinel-developer-profile-enterprise-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "profile",
+      "description": "Profile: Sentinel Enterprise & Cloud Service Developer",
+      "dependencies": [
+        "sentinel-developer-profile-desktop",
+        "sentinel-developer-framework-docs"
+      ],
+      "sha256": "478f31254b0fbf5786f323b1cc67e65f5bcb761f4e4ec1e3e359aec07053fd97",
+      "size_bytes": 512
+    },
+    "sentinel-developer-profile-embedded": {
+      "archive": "sentinel-developer-profile-embedded-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "profile",
+      "description": "Profile: Sentinel Embedded & Site Node Developer",
+      "dependencies": [
+        "sentinel-developer-framework-core",
+        "sentinel-developer-framework-rust",
+        "sentinel-developer-framework-cross",
+        "sentinel-developer-framework-system",
+        "sentinel-developer-framework-sdk",
+        "sentinel-developer-framework-test"
+      ],
+      "sha256": "35ba72833c96dcbd1ca1b9b64236e351f05fe0ee5a97a21723f94c852021353d",
+      "size_bytes": 530
+    }
+  }
+}

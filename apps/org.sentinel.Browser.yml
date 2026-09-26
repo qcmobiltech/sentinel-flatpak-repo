@@ -1,0 +1,34 @@
+app-id: org.sentinel.Browser
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: sentinel-browser
+finish-args:
+  # Sandbox containment for Sentinel Browser
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --socket=pulseaudio
+  - --share=network
+  - --filesystem=xdg-download
+  - --filesystem=xdg-config/sentinel:create
+  - --talk-name=org.freedesktop.portal.Desktop
+  - --talk-name=org.freedesktop.portal.FileChooser
+modules:
+  - name: sentinel-browser
+    buildsystem: simple
+    build-commands:
+      - install -D -m755 bin/sentinel-browser /app/bin/sentinel-browser
+      - install -D -m644 packaging/org.sentinel.Browser.desktop /app/share/applications/org.sentinel.Browser.desktop
+      - install -D -m644 assets/org.sentinel.Browser.svg /app/share/icons/hicolor/scalable/apps/org.sentinel.Browser.svg
+      - install -D -m644 packaging/org.sentinel.Browser.metainfo.xml /app/share/metainfo/org.sentinel.Browser.metainfo.xml
+    sources:
+      - type: file
+        path: bin/sentinel-browser
+      - type: file
+        path: packaging/org.sentinel.Browser.desktop
+      - type: file
+        path: assets/org.sentinel.Browser.svg
+      - type: file
+        path: packaging/org.sentinel.Browser.metainfo.xml

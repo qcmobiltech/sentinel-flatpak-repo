@@ -1,0 +1,21 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-browser": {
+      "archive": "sentinel-browser-2026.1.0-x86_64.spk",
+      "version": "2026.1.0",
+      "type": "application",
+      "description": "Official Sentinel Browser for Sentinel Linux (Native Rust + Slint Privacy-First Secure Browser with Sentinel Shields, Profile Isolation, and Vault Integration)",
+      "security_realm": "UserRealm",
+      "app_id": "org.sentinel.Browser",
+      "dependencies": [
+        "sentinel-platform-base",
+        "sentinel-vault-ipc"
+      ],
+      "sha256": "314be3164aed069d48e9713e58871768b4dab8b96bde46974786778d2893aa05",
+      "size_bytes": 13107088
+    }
+  }
+}

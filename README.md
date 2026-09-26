@@ -28,6 +28,7 @@ flatpak install sentinel org.sentinel.Terminal
 flatpak install sentinel org.sentinel.Vault
 flatpak install sentinel org.sentinel.Office
 flatpak install sentinel org.sentinel.Calculator
+flatpak install sentinel org.sentinel.Media
 ```
 
 ---

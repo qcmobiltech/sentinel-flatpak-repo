@@ -1,0 +1,22 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-media": {
+      "archive": "sentinel-media-2027.0.0-x86_64.spk",
+      "version": "2027.0.0",
+      "type": "application",
+      "description": "Official Sentinel Media for Sentinel Linux (Native Rust + Slint Multimedia Player with Hardware Acceleration, 10-Band Equalizer, and Subtitle Engine)",
+      "security_realm": "UserRealm",
+      "app_id": "org.sentinel.Media",
+      "dependencies": [
+        "sentinel-media-framework-core",
+        "sentinel-media-framework-service",
+        "sentinel-developer-framework-slint"
+      ],
+      "sha256": "9c31358a9f140428f0571867ad4a6a5c6167d699fca76edbd0099e29c91973d1",
+      "size_bytes": 12414038
+    }
+  }
+}

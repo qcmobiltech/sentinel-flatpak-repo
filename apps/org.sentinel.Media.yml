@@ -1,0 +1,36 @@
+app-id: org.sentinel.Media
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: sentinel-media
+finish-args:
+  # Sandbox containment for Sentinel Media
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --socket=pulseaudio
+  - --share=network
+  - --filesystem=host
+  - --filesystem=xdg-config/sentinel:create
+  - --filesystem=xdg-music:ro
+  - --filesystem=xdg-videos:ro
+  - --talk-name=org.freedesktop.portal.Desktop
+  - --talk-name=org.freedesktop.portal.FileChooser
+modules:
+  - name: sentinel-media
+    buildsystem: simple
+    build-commands:
+      - install -D -m755 bin/sentinel-media /app/bin/sentinel-media
+      - install -D -m644 packaging/org.sentinel.Media.desktop /app/share/applications/org.sentinel.Media.desktop
+      - install -D -m644 assets/org.sentinel.Media.svg /app/share/icons/hicolor/scalable/apps/org.sentinel.Media.svg
+      - install -D -m644 packaging/org.sentinel.Media.metainfo.xml /app/share/metainfo/org.sentinel.Media.metainfo.xml
+    sources:
+      - type: file
+        path: bin/sentinel-media
+      - type: file
+        path: packaging/org.sentinel.Media.desktop
+      - type: file
+        path: assets/org.sentinel.Media.svg
+      - type: file
+        path: packaging/org.sentinel.Media.metainfo.xml

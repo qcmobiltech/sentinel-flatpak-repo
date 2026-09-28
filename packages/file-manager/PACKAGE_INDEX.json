@@ -1,0 +1,23 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-file-manager": {
+      "archive": "sentinel-file-manager-1.0.0-x86_64.spk",
+      "version": "1.0.0",
+      "type": "application",
+      "description": "Official Sentinel File Manager for Sentinel Linux (Native Rust + Slint Desktop File Manager)",
+      "security_realm": "UserRealm",
+      "app_id": "org.sentinel.FileManager",
+      "dependencies": [
+        "Oxygen-Icons-Dark",
+        "Sentinel-Terminal",
+        "Sentinel-Hardware-Framework",
+        "Sentinel-Firmware-Updater"
+      ],
+      "sha256": "12484b8999dcb619fdd7751a2ee2293bb8c5499b8b6039199cbd6b21c3c78070",
+      "size_bytes": 11620353
+    }
+  }
+}

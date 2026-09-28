@@ -1,0 +1,21 @@
+app-id: org.sentinel.SANEAirScan
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: sentinel-sane-discovery
+finish-args:
+  # Scanner Discovery Confinement: eSCL & WSD network acquisition
+  - --share=ipc
+  - --share=network
+  - --system-talk-name=org.freedesktop.Avahi
+modules:
+  - name: sentinel-sane-airscan
+    buildsystem: simple
+    build-commands:
+      - install -D -m755 bin/sentinel-sane-discovery /app/bin/sentinel-sane-discovery
+      - install -D -m644 packaging/org.sentinel.SANEAirScan.metainfo.xml /app/share/metainfo/org.sentinel.SANEAirScan.metainfo.xml
+    sources:
+      - type: file
+        path: bin/sentinel-sane-discovery
+      - type: file
+        path: packaging/org.sentinel.SANEAirScan.metainfo.xml

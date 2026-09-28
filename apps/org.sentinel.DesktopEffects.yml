@@ -1,0 +1,29 @@
+app-id: org.sentinel.DesktopEffects
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: sentinel-desktop-effects
+finish-args:
+  # User Realm Confinement: Display compositor effects
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --talk-name=org.freedesktop.portal.Desktop
+modules:
+  - name: sentinel-desktop-effects
+    buildsystem: simple
+    build-commands:
+      - install -D -m755 bin/sentinel-desktop-effects /app/bin/sentinel-desktop-effects
+      - install -D -m755 bin/sentinel-effects-ctl /app/bin/sentinel-effects-ctl
+      - install -D -m644 packaging/desktop-effects.desktop /app/share/applications/org.sentinel.DesktopEffects.desktop
+      - install -D -m644 ui/desktop_effects.slint /app/share/sentinel/ui/desktop_effects.slint
+    sources:
+      - type: file
+        path: bin/sentinel-desktop-effects
+      - type: file
+        path: bin/sentinel-effects-ctl
+      - type: file
+        path: packaging/desktop-effects.desktop
+      - type: file
+        path: ui/desktop_effects.slint

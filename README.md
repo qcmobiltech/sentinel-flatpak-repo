@@ -30,6 +30,11 @@ flatpak install sentinel org.sentinel.Office
 flatpak install sentinel org.sentinel.Calculator
 flatpak install sentinel org.sentinel.Media
 flatpak install sentinel org.sentinel.Browser
+flatpak install sentinel org.sentinel.Boombox
+flatpak install sentinel org.sentinel.DesktopEffects
+flatpak install sentinel org.sentinel.HardwareFramework
+flatpak install sentinel org.sentinel.IPPPrinting
+flatpak install sentinel org.sentinel.SANEAirScan
 ```
 
 ---

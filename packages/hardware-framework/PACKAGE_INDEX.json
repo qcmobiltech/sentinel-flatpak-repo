@@ -1,0 +1,21 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-hardware-framework": {
+      "archive": "sentinel-hardware-framework-2.1.0-x86_64.spk",
+      "version": "2.1.0",
+      "type": "framework",
+      "description": "Official Hardware Support Framework, Firmware Updater, Desktop Push Notifications & Network Peripheral Discovery V2.1 for Sentinel Linux",
+      "security_realm": "UserRealm",
+      "app_id": "org.sentinel.HardwareFramework",
+      "dependencies": [
+        "Sentinel-IPP-Printing",
+        "Sentinel-SANE-AirScan"
+      ],
+      "sha256": "742f536781296b38129ec6258b51f71e151df9b27a6bb3c31bb01f681bbcfcbb",
+      "size_bytes": 12562364
+    }
+  }
+}

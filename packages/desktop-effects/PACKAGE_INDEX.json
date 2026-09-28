@@ -1,0 +1,22 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-desktop-effects": {
+      "archive": "sentinel-desktop-effects-1.0.0-x86_64.spk",
+      "version": "1.0.0",
+      "type": "system",
+      "description": "Official Native Desktop Effects Engine and Workspace Transition Manager for Sentinel Linux",
+      "security_realm": "UserRealm",
+      "app_id": "org.sentinel.DesktopEffects",
+      "dependencies": [
+        "libwayland-client",
+        "mesa-libgbm",
+        "mesa-dri-drivers"
+      ],
+      "sha256": "d96a7d568435fa96945747a656b13873dee71e6bd8dcaa0d7fc02f0fe04eaf90",
+      "size_bytes": 758562
+    }
+  }
+}

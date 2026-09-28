@@ -1,0 +1,33 @@
+app-id: org.sentinel.HardwareFramework
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: sentinel-hardware-ui
+finish-args:
+  # Hardware Support Framework Confinement: Subsystem device access & notifications
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=all
+  - --talk-name=org.freedesktop.Notifications
+  - --system-talk-name=org.freedesktop.Avahi
+modules:
+  - name: sentinel-hardware-framework
+    buildsystem: simple
+    build-commands:
+      - install -D -m755 bin/sentinel-hardware-ui /app/bin/sentinel-hardware-ui
+      - install -D -m755 bin/sentinel-hw-ctl /app/bin/sentinel-hw-ctl
+      - install -D -m755 bin/sentinel-hw-agent /app/bin/sentinel-hw-agent
+      - install -D -m644 packaging/org.sentinel.HardwareFramework.desktop /app/share/applications/org.sentinel.HardwareFramework.desktop
+      - install -D -m644 packaging/org.sentinel.HardwareFramework.metainfo.xml /app/share/metainfo/org.sentinel.HardwareFramework.metainfo.xml
+    sources:
+      - type: file
+        path: bin/sentinel-hardware-ui
+      - type: file
+        path: bin/sentinel-hw-ctl
+      - type: file
+        path: bin/sentinel-hw-agent
+      - type: file
+        path: packaging/org.sentinel.HardwareFramework.desktop
+      - type: file
+        path: packaging/org.sentinel.HardwareFramework.metainfo.xml

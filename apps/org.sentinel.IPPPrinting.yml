@@ -1,0 +1,21 @@
+app-id: org.sentinel.IPPPrinting
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: sentinel-ipp-discovery
+finish-args:
+  # System Discovery Confinement: Local network multicast DNS discovery
+  - --share=ipc
+  - --share=network
+  - --system-talk-name=org.freedesktop.Avahi
+modules:
+  - name: sentinel-ipp-printing
+    buildsystem: simple
+    build-commands:
+      - install -D -m755 bin/sentinel-ipp-discovery /app/bin/sentinel-ipp-discovery
+      - install -D -m644 packaging/org.sentinel.IPPPrinting.metainfo.xml /app/share/metainfo/org.sentinel.IPPPrinting.metainfo.xml
+    sources:
+      - type: file
+        path: bin/sentinel-ipp-discovery
+      - type: file
+        path: packaging/org.sentinel.IPPPrinting.metainfo.xml

@@ -1,0 +1,38 @@
+app-id: org.sentinel.Boombox
+runtime: org.freedesktop.Platform
+runtime-version: '24.08'
+sdk: org.freedesktop.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.rust-stable
+command: sentinel-boombox
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --socket=pulseaudio
+  - --share=network
+  - --filesystem=xdg-music:ro
+  - --filesystem=xdg-download
+  - --filesystem=xdg-run/pipewire-0
+  - --device=all
+  - --talk-name=org.mpris.MediaPlayer2.*
+  - --talk-name=org.freedesktop.Notifications
+
+build-options:
+  append-path: /usr/lib/sdk/rust-stable/bin
+  env:
+    CARGO_HOME: /run/build/sentinel-boombox/cargo
+
+modules:
+  - name: sentinel-boombox
+    buildsystem: simple
+    build-commands:
+      - cargo --offline fetch --manifest-path Cargo.toml
+      - cargo --offline build --release --verbose
+      - install -Dm755 target/release/sentinel-boombox /app/bin/sentinel-boombox
+      - install -Dm644 packaging/org.sentinel.Boombox.desktop /app/share/applications/org.sentinel.Boombox.desktop
+      - install -Dm644 packaging/org.sentinel.Boombox.metainfo.xml /app/share/metainfo/org.sentinel.Boombox.metainfo.xml
+      - install -Dm644 assets/icons/org.sentinel.Boombox.svg /app/share/icons/hicolor/scalable/apps/org.sentinel.Boombox.svg
+    sources:
+      - type: dir
+        path: ../../

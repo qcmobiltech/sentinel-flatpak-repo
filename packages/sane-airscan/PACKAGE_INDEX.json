@@ -1,0 +1,21 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-sane-airscan": {
+      "archive": "sentinel-sane-airscan-1.0.0-x86_64.spk",
+      "version": "1.0.0",
+      "type": "system",
+      "description": "Official SANE eSCL / WSD Driverless Network Scanner Discovery & Acquisition Framework for Sentinel Linux",
+      "security_realm": "UserRealm",
+      "app_id": "org.sentinel.SANEAirScan",
+      "dependencies": [
+        "sane-backends",
+        "libavahi-client"
+      ],
+      "sha256": "c0e517dd7ae83d52181f2718e17bb38b233ae91a0358c9274fa0a3200746f382",
+      "size_bytes": 673065
+    }
+  }
+}

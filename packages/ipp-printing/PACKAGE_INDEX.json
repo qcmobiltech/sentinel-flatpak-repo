@@ -1,0 +1,21 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-ipp-printing": {
+      "archive": "sentinel-ipp-printing-1.0.0-x86_64.spk",
+      "version": "1.0.0",
+      "type": "system",
+      "description": "Official IPP Everywhere & Driverless Printing Discovery Framework for Sentinel Linux",
+      "security_realm": "UserRealm",
+      "app_id": "org.sentinel.IPPPrinting",
+      "dependencies": [
+        "cups-libs>=2.4",
+        "avahi-glib"
+      ],
+      "sha256": "5d8c8bf9450e1014a2e509c2f8216cd53d6227e1dfe76423c113ec99133a33f9",
+      "size_bytes": 666514
+    }
+  }
+}

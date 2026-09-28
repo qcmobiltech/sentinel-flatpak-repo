@@ -32,6 +32,7 @@ jobs:
           if [ ! -f repo/config ]; then
             ostree init --mode=archive-z2 --repo=repo
           fi
+          mkdir -p repo/refs/heads repo/refs/remotes repo/objects
 
       - name: Generate OSTree Summary
         run: |

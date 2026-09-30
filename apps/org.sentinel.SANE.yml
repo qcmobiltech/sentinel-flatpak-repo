@@ -1,0 +1,38 @@
+app-id: org.sentinel.SANE
+runtime: org.freedesktop.Platform
+runtime-version: '24.08'
+sdk: org.freedesktop.Sdk
+command: sentinel-sane-ctl
+finish-args:
+  # Hardware Driver Subsystem Confinement: USB scanner buses, SCSI, network scanning & HardwareRealm
+  - --share=ipc
+  - --share=network
+  - --device=all
+  - --filesystem=/dev/bus/usb:rw
+  - --filesystem=/etc/sane.d:rw
+  - --filesystem=/run/udev:ro
+  - --filesystem=/etc/udev/rules.d:ro
+  - --filesystem=xdg-run/sane
+modules:
+  - name: sentinel-sane
+    buildsystem: simple
+    build-commands:
+      - install -D -m755 target/release/sentinel-sane-ctl /app/bin/sentinel-sane-ctl
+      - install -D -m644 packaging/org.sentinel.SANE.metainfo.xml /app/share/metainfo/org.sentinel.SANE.metainfo.xml
+      - install -D -m644 packaging/org.sentinel.SANE.desktop /app/share/applications/org.sentinel.SANE.desktop
+      - install -D -m644 assets/icons/org.sentinel.SANE.svg /app/share/icons/hicolor/scalable/apps/org.sentinel.SANE.svg
+      - install -D -m644 packaging/sentinel-provider.json /app/etc/sentinel/hardware/sentinel-provider.json
+      - install -D -m644 packaging/99-sentinel-sane.rules /app/etc/udev/rules.d/99-sentinel-sane.rules
+    sources:
+      - type: file
+        path: target/release/sentinel-sane-ctl
+      - type: file
+        path: packaging/org.sentinel.SANE.metainfo.xml
+      - type: file
+        path: packaging/org.sentinel.SANE.desktop
+      - type: file
+        path: assets/icons/org.sentinel.SANE.svg
+      - type: file
+        path: packaging/sentinel-provider.json
+      - type: file
+        path: packaging/99-sentinel-sane.rules

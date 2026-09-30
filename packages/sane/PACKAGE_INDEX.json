@@ -1,0 +1,263 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-sane-core": {
+      "archive": "Sentinel-SANE-Core-1.4.0-x86_64.spk",
+      "version": "1.4.0",
+      "type": "hardware-provider",
+      "description": "Sentinel SANE Core runtime, dynamic backend loader, CLI scanning tools, saned daemon, and device permissions",
+      "security_realm": "HardwareRealm",
+      "app_id": "org.sentinel.SANE",
+      "flatpak_manifest": "org.sentinel.SANE.yml",
+      "is_external": false,
+      "license": "GPL-2.0-or-later",
+      "dependencies": [
+        "Sentinel-Hardware-Core"
+      ],
+      "sha256": "f226780df025f35ee31e6cac236bafdd241cdcd41dfa219943ad85dd4076398c",
+      "size_bytes": 612976
+    },
+    "sentinel-sane-backend-genesys": {
+      "archive": "Sentinel-SANE-Backend-Genesys-1.4.0-x86_64.spk",
+      "version": "1.4.0",
+      "type": "hardware-provider",
+      "description": "Genesys Logic GL chipset scanner driver (Canon LiDE, HP ScanJet, Plustek)",
+      "security_realm": "HardwareRealm",
+      "app_id": "org.sentinel.SANE",
+      "flatpak_manifest": "org.sentinel.SANE.yml",
+      "is_external": false,
+      "license": "GPL-2.0-or-later",
+      "dependencies": [
+        "Sentinel-SANE-Core"
+      ],
+      "sha256": "6e89022e023ab133a761d2578615821480f12f8c528e507461a6ae49db2231ed",
+      "size_bytes": 1030
+    },
+    "sentinel-sane-backend-epson": {
+      "archive": "Sentinel-SANE-Backend-Epson-1.4.0-x86_64.spk",
+      "version": "1.4.0",
+      "type": "hardware-provider",
+      "description": "Epson ESC/I, ESC/I-2, and ESC/I-DS photo and document scanner backends",
+      "security_realm": "HardwareRealm",
+      "app_id": "org.sentinel.SANE",
+      "flatpak_manifest": "org.sentinel.SANE.yml",
+      "is_external": false,
+      "license": "GPL-2.0-or-later",
+      "dependencies": [
+        "Sentinel-SANE-Core"
+      ],
+      "sha256": "3712c1a55fb9ceacac91293196ad0d9b49226e26bf96d80fd8aa8d759b9add54",
+      "size_bytes": 1352
+    },
+    "sentinel-sane-backend-canon": {
+      "archive": "Sentinel-SANE-Backend-Canon-1.4.0-x86_64.spk",
+      "version": "1.4.0",
+      "type": "hardware-provider",
+      "description": "Canon imageFORMULA DR document reader and PIXMA multifunction scanner backends",
+      "security_realm": "HardwareRealm",
+      "app_id": "org.sentinel.SANE",
+      "flatpak_manifest": "org.sentinel.SANE.yml",
+      "is_external": false,
+      "license": "GPL-2.0-or-later",
+      "dependencies": [
+        "Sentinel-SANE-Core"
+      ],
+      "sha256": "0c34650b2fb99bbae7c40de0c036ca1789125f2eb2630008b9da7cd59b72d718",
+      "size_bytes": 1560
+    },
+    "sentinel-sane-backend-fujitsu": {
+      "archive": "Sentinel-SANE-Backend-Fujitsu-1.4.0-x86_64.spk",
+      "version": "1.4.0",
+      "type": "hardware-provider",
+      "description": "Fujitsu fi-series, ScanSnap, and commercial ADF scanner backends",
+      "security_realm": "HardwareRealm",
+      "app_id": "org.sentinel.SANE",
+      "flatpak_manifest": "org.sentinel.SANE.yml",
+      "is_external": false,
+      "license": "GPL-2.0-or-later",
+      "dependencies": [
+        "Sentinel-SANE-Core"
+      ],
+      "sha256": "2f4b5baf06e6cd29d1ed69f88103d56776b8188bbc02aa0ac6484691c2ab3db7",
+      "size_bytes": 1213
+    },
+    "sentinel-sane-backend-hp": {
+      "archive": "Sentinel-SANE-Backend-HP-1.4.0-x86_64.spk",
+      "version": "1.4.0",
+      "type": "hardware-provider",
+      "description": "HP ScanJet, LaserJet, and OfficeJet multifunction scanning backends",
+      "security_realm": "HardwareRealm",
+      "app_id": "org.sentinel.SANE",
+      "flatpak_manifest": "org.sentinel.SANE.yml",
+      "is_external": false,
+      "license": "GPL-2.0-or-later",
+      "dependencies": [
+        "Sentinel-SANE-Core"
+      ],
+      "sha256": "dbeb13f741b5d18a72cff8a11c954a16149727ced4d2e1c35f70515acdafb569",
+      "size_bytes": 2006
+    },
+    "sentinel-sane-backend-kodak": {
+      "archive": "Sentinel-SANE-Backend-Kodak-1.4.0-x86_64.spk",
+      "version": "1.4.0",
+      "type": "hardware-provider",
+      "description": "Kodak Alaris i1100, i2000 commercial ADF and consumer ESP scanner backends",
+      "security_realm": "HardwareRealm",
+      "app_id": "org.sentinel.SANE",
+      "flatpak_manifest": "org.sentinel.SANE.yml",
+      "is_external": false,
+      "license": "GPL-2.0-or-later",
+      "dependencies": [
+        "Sentinel-SANE-Core"
+      ],
+      "sha256": "18acedd5ec6757364ec7ac334644825e3a64aca67cb6284015281cf888673b8a",
+      "size_bytes": 1210
+    },
+    "sentinel-sane-backend-lexmark": {
+      "archive": "Sentinel-SANE-Backend-Lexmark-1.4.0-x86_64.spk",
+      "version": "1.4.0",
+      "type": "hardware-provider",
+      "description": "Lexmark X-series and commercial network multifunction scanner backends",
+      "security_realm": "HardwareRealm",
+      "app_id": "org.sentinel.SANE",
+      "flatpak_manifest": "org.sentinel.SANE.yml",
+      "is_external": false,
+      "license": "GPL-2.0-or-later",
+      "dependencies": [
+        "Sentinel-SANE-Core"
+      ],
+      "sha256": "921680cbd41fbf142155afec0620285476ab247b051145e21c99f68703b534ac",
+      "size_bytes": 1227
+    },
+    "sentinel-sane-backend-ricoh": {
+      "archive": "Sentinel-SANE-Backend-Ricoh-1.4.0-x86_64.spk",
+      "version": "1.4.0",
+      "type": "hardware-provider",
+      "description": "Ricoh IS-series high-speed document flatbed and ADF scanner backends",
+      "security_realm": "HardwareRealm",
+      "app_id": "org.sentinel.SANE",
+      "flatpak_manifest": "org.sentinel.SANE.yml",
+      "is_external": false,
+      "license": "GPL-2.0-or-later",
+      "dependencies": [
+        "Sentinel-SANE-Core"
+      ],
+      "sha256": "50b06caed1a89f5d1ea27227269ca07ac3f3976a37a08e831f1094e3db777f5d",
+      "size_bytes": 1006
+    },
+    "sentinel-sane-backend-xerox": {
+      "archive": "Sentinel-SANE-Backend-Xerox-1.4.0-x86_64.spk",
+      "version": "1.4.0",
+      "type": "hardware-provider",
+      "description": "Xerox DocuMate and WorkCentre multi-function scanning backends",
+      "security_realm": "HardwareRealm",
+      "app_id": "org.sentinel.SANE",
+      "flatpak_manifest": "org.sentinel.SANE.yml",
+      "is_external": false,
+      "license": "GPL-2.0-or-later",
+      "dependencies": [
+        "Sentinel-SANE-Core"
+      ],
+      "sha256": "dbcec9f7c7643a0b619f3d83d828c612ebdff0bb89d7a7cb0484a4d4e0ed20ac",
+      "size_bytes": 1025
+    },
+    "sentinel-sane-backend-plustek": {
+      "archive": "Sentinel-SANE-Backend-Plustek-1.4.0-x86_64.spk",
+      "version": "1.4.0",
+      "type": "hardware-provider",
+      "description": "Plustek OpticFilm film scanners and LM983x flatbed backends",
+      "security_realm": "HardwareRealm",
+      "app_id": "org.sentinel.SANE",
+      "flatpak_manifest": "org.sentinel.SANE.yml",
+      "is_external": false,
+      "license": "GPL-2.0-or-later",
+      "dependencies": [
+        "Sentinel-SANE-Core"
+      ],
+      "sha256": "7efbc4ec80e704bf165ff4fcfc8242942f844139318815ca70d005c09ade4740",
+      "size_bytes": 1217
+    },
+    "sentinel-sane-backend-avision": {
+      "archive": "Sentinel-SANE-Backend-Avision-1.4.0-x86_64.spk",
+      "version": "1.4.0",
+      "type": "hardware-provider",
+      "description": "Avision high-speed ADF document scanners and OEM boards",
+      "security_realm": "HardwareRealm",
+      "app_id": "org.sentinel.SANE",
+      "flatpak_manifest": "org.sentinel.SANE.yml",
+      "is_external": false,
+      "license": "GPL-2.0-or-later",
+      "dependencies": [
+        "Sentinel-SANE-Core"
+      ],
+      "sha256": "e6fa944816eb7258ad33921944e82476c0432e91f7b208d1eb83b2b332ffea74",
+      "size_bytes": 1011
+    },
+    "sentinel-sane-backend-mustek": {
+      "archive": "Sentinel-SANE-Backend-Mustek-1.4.0-x86_64.spk",
+      "version": "1.4.0",
+      "type": "hardware-provider",
+      "description": "Mustek BearPaw and ScanExpress large format A3 scanner backends",
+      "security_realm": "HardwareRealm",
+      "app_id": "org.sentinel.SANE",
+      "flatpak_manifest": "org.sentinel.SANE.yml",
+      "is_external": false,
+      "license": "GPL-2.0-or-later",
+      "dependencies": [
+        "Sentinel-SANE-Core"
+      ],
+      "sha256": "f177bb8fd8bb0d5c104cbc2731cc6947a1e3e83d7878391cf7fbc8104c372435",
+      "size_bytes": 1391
+    },
+    "sentinel-sane-backend-panasonic": {
+      "archive": "Sentinel-SANE-Backend-Panasonic-1.4.0-x86_64.spk",
+      "version": "1.4.0",
+      "type": "hardware-provider",
+      "description": "Panasonic KV-S high-speed department document scanner backends",
+      "security_realm": "HardwareRealm",
+      "app_id": "org.sentinel.SANE",
+      "flatpak_manifest": "org.sentinel.SANE.yml",
+      "is_external": false,
+      "license": "GPL-2.0-or-later",
+      "dependencies": [
+        "Sentinel-SANE-Core"
+      ],
+      "sha256": "03f7ce85c8c387a35b8a468c813fcc4da89346705a5504cadfa8b032d945d360",
+      "size_bytes": 1350
+    },
+    "sentinel-sane-backend-escl": {
+      "archive": "Sentinel-SANE-Backend-ESCL-1.4.0-x86_64.spk",
+      "version": "1.4.0",
+      "type": "hardware-provider",
+      "description": "Driverless Apple AirScan / Mopria eSCL network scanner backend",
+      "security_realm": "HardwareRealm",
+      "app_id": "org.sentinel.SANE",
+      "flatpak_manifest": "org.sentinel.SANE.yml",
+      "is_external": false,
+      "license": "GPL-2.0-or-later",
+      "dependencies": [
+        "Sentinel-SANE-Core"
+      ],
+      "sha256": "2a6d58c3da394d33e538073817ba4cd1a952f424d6033eb0a6c4b90264006874",
+      "size_bytes": 1005
+    },
+    "sentinel-sane-external-brother": {
+      "archive": "Sentinel-SANE-External-Brother-1.4.0-x86_64.spk",
+      "version": "1.4.0",
+      "type": "hardware-provider",
+      "description": "Brother ADS-series and multifunction document scanners (Vendor / Proprietary)",
+      "security_realm": "HardwareRealm",
+      "app_id": "org.sentinel.SANE",
+      "flatpak_manifest": "org.sentinel.SANE.yml",
+      "is_external": true,
+      "license": "Proprietary / Vendor Separately Distributable",
+      "dependencies": [
+        "Sentinel-SANE-Core"
+      ],
+      "sha256": "bc47ece4c3f2f0d621fea48af6fc3748599b1cbfe9f8796f3ceeea6cc2ca221c",
+      "size_bytes": 1191
+    }
+  }
+}

@@ -35,6 +35,7 @@ flatpak install sentinel org.sentinel.DesktopEffects
 flatpak install sentinel org.sentinel.HardwareFramework
 flatpak install sentinel org.sentinel.IPPPrinting
 flatpak install sentinel org.sentinel.SANEAirScan
+flatpak install sentinel org.sentinel.Gutenprint
 ```
 
 ---

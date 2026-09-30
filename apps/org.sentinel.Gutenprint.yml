@@ -1,0 +1,35 @@
+app-id: org.sentinel.Gutenprint
+runtime: org.freedesktop.Platform
+runtime-version: '24.08'
+sdk: org.freedesktop.Sdk
+command: sentinel-gutenprint-ctl
+finish-args:
+  # Hardware Driver Subsystem Confinement: CUPS spooler, USB printing & direct dye-sub access
+  - --share=ipc
+  - --share=network
+  - --device=all
+  - --system-talk-name=org.cups.cupsd
+  - --filesystem=/etc/cups:ro
+  - --filesystem=/run/cups
+  - --filesystem=xdg-run/cups
+  - --filesystem=/var/run/cups
+modules:
+  - name: sentinel-gutenprint
+    buildsystem: simple
+    build-commands:
+      - install -D -m755 bin/sentinel-gutenprint-ctl /app/bin/sentinel-gutenprint-ctl
+      - install -D -m644 packaging/org.sentinel.Gutenprint.metainfo.xml /app/share/metainfo/org.sentinel.Gutenprint.metainfo.xml
+      - install -D -m644 packaging/org.sentinel.Gutenprint.desktop /app/share/applications/org.sentinel.Gutenprint.desktop
+      - install -D -m644 assets/icons/org.sentinel.Gutenprint.svg /app/share/icons/hicolor/scalable/apps/org.sentinel.Gutenprint.svg
+      - install -D -m644 packaging/sentinel-provider.json /app/etc/sentinel/hardware/sentinel-provider.json
+    sources:
+      - type: file
+        path: bin/sentinel-gutenprint-ctl
+      - type: file
+        path: packaging/org.sentinel.Gutenprint.metainfo.xml
+      - type: file
+        path: packaging/org.sentinel.Gutenprint.desktop
+      - type: file
+        path: assets/icons/org.sentinel.Gutenprint.svg
+      - type: file
+        path: packaging/sentinel-provider.json

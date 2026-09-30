@@ -1,0 +1,22 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-gutenprint": {
+      "archive": "Sentinel-Gutenprint-5.3.6pre-x86_64.spk",
+      "version": "5.3.6pre",
+      "type": "hardware-provider",
+      "description": "Complete Gutenprint printer driver subsystem for Sentinel (3,000+ printers, CUPS raster filters, dye-sublimation backend, PPD generator)",
+      "security_realm": "HardwareRealm",
+      "app_id": "org.sentinel.Gutenprint",
+      "flatpak_manifest": "org.sentinel.Gutenprint.yml",
+      "dependencies": [
+        "Sentinel-Hardware-Core",
+        "Sentinel-CUPS"
+      ],
+      "sha256": "c27c8257a25519d07ae7d866697f284b6c3b5fb27aabf97e508debb11f31fe55",
+      "size_bytes": 656242
+    }
+  }
+}

@@ -1,0 +1,32 @@
+app-id: org.sentinel.SystemHealth
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.rust-stable
+command: sentinel-system-health
+
+finish-args:
+  # System Health & Telemetry Confinement: Strictly read-only host telemetry
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --filesystem=/proc:ro
+  - --filesystem=/sys:ro
+  - --filesystem=/etc/os-release:ro
+  - --filesystem=xdg-run/systemd:ro
+  - --system-talk-name=org.freedesktop.systemd1
+
+modules:
+  - name: sentinel-system-health
+    buildsystem: simple
+    build-commands:
+      - cargo build --release --verbose
+      - install -D -m755 target/release/sentinel-system-health /app/bin/sentinel-system-health
+      - install -D -m644 packaging/org.sentinel.SystemHealth.desktop /app/share/applications/org.sentinel.SystemHealth.desktop
+      - install -D -m644 packaging/org.sentinel.SystemHealth.metainfo.xml /app/share/metainfo/org.sentinel.SystemHealth.metainfo.xml
+      - install -D -m644 assets/icons/sentinel-logo.svg /app/share/icons/hicolor/scalable/apps/org.sentinel.SystemHealth.svg
+    sources:
+      - type: dir
+        path: ../../

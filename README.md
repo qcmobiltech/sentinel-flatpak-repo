@@ -37,6 +37,7 @@ flatpak install sentinel org.sentinel.IPPPrinting
 flatpak install sentinel org.sentinel.SANEAirScan
 flatpak install sentinel org.sentinel.Gutenprint
 flatpak install sentinel org.sentinel.SANE
+flatpak install sentinel org.sentinel.SystemHealth
 ```
 
 ---

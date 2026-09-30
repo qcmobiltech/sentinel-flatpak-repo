@@ -1,0 +1,20 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-system-health": {
+      "archive": "sentinel-system-health-1.0.0-x86_64.spk",
+      "version": "1.0.0",
+      "type": "application",
+      "description": "Native Rust + Slint System Health & Telemetry Center for Sentinel Linux with real-time hardware monitoring, diagnostics, and findings",
+      "security_realm": "UserRealm",
+      "app_id": "org.sentinel.SystemHealth",
+      "dependencies": [
+        "sentinel-platform-base"
+      ],
+      "sha256": "5baf82b2055e43d4438b958f15f694186ed851e5990efab652d66a0aa37f64ed",
+      "size_bytes": 13567463
+    }
+  }
+}

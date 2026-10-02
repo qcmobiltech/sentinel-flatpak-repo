@@ -1,0 +1,35 @@
+app-id: org.sentinel.Contacts
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.rust-stable
+command: sentinel-contacts
+
+finish-args:
+  # User Realm Sandbox Containment
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --filesystem=host
+  - --filesystem=xdg-config/sentinel:create
+  - --filesystem=~/.local/share/sentinel-contacts:create
+  - --talk-name=org.freedesktop.portal.Desktop
+  - --talk-name=org.freedesktop.portal.FileChooser
+  - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.sentinel.Vault
+  - --talk-name=org.sentinel.Mail
+
+modules:
+  - name: sentinel-contacts
+    buildsystem: simple
+    build-commands:
+      - cargo build --release --verbose
+      - install -Dm755 target/release/sentinel-contacts /app/bin/sentinel-contacts
+      - install -Dm644 packaging/org.sentinel.Contacts.desktop /app/share/applications/org.sentinel.Contacts.desktop
+      - install -Dm644 packaging/org.sentinel.Contacts.metainfo.xml /app/share/metainfo/org.sentinel.Contacts.metainfo.xml
+      - install -Dm644 assets/org.sentinel.Contacts.svg /app/share/icons/hicolor/scalable/apps/org.sentinel.Contacts.svg
+    sources:
+      - type: dir
+        path: ../../

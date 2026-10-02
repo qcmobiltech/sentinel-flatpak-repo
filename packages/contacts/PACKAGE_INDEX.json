@@ -1,0 +1,21 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-contacts": {
+      "archive": "sentinel-contacts-1.0.0-x86_64.spk",
+      "version": "1.0.0",
+      "type": "application",
+      "description": "Official Sentinel Encrypted Contacts for Sentinel Linux (Native Rust + Slint with Sentinel Vault integration)",
+      "security_realm": "UserRealm",
+      "app_id": "org.sentinel.Contacts",
+      "dependencies": [
+        "Sentinel-Vault",
+        "Sentinel-Mail"
+      ],
+      "sha256": "1c554efcb410f59e73bdc3fa49f2269d4e68d576a6444d0b8b15b1f67be773e8",
+      "size_bytes": 12862485
+    }
+  }
+}

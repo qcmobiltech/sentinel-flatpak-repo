@@ -1,0 +1,20 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-terminal": {
+      "archive": "sentinel-terminal-1.0.0-x86_64.spk",
+      "version": "1.0.0",
+      "type": "application",
+      "description": "Native graphical remote terminal, serial hardware console, and local shell client for Sentinel Linux",
+      "security_realm": "UserRealm",
+      "app_id": "org.sentinel.Terminal",
+      "dependencies": [
+        "sentinel-platform-base"
+      ],
+      "sha256": "2c4a3de192add10d3dbcbaed6becd2e823123ea3cbaf51b7adf0c1e64ca79ca6",
+      "size_bytes": 12011667
+    }
+  }
+}

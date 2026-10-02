@@ -6,10 +6,13 @@ command: sentinel-terminal
 finish-args:
   # Dev Sandbox Realm Confinement: Unprivileged user namespace
   - --share=ipc
+  - --share=network
   - --socket=fallback-x11
   - --socket=wayland
   - --device=dri
+  - --device=all
   - --talk-name=com.sentinel.SecurityCore1
+  - --filesystem=host:ro
 modules:
   - name: sentinel-terminal
     buildsystem: simple

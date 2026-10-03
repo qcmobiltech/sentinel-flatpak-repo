@@ -1,0 +1,22 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-dock-enhancements": {
+      "archive": "sentinel-dock-enhancements-1.0.0-x86_64.spk",
+      "version": "1.0.0",
+      "type": "system",
+      "description": "Official Native Dock Enhancements Extension Layer for Sentinel Linux",
+      "security_realm": "UserRealm",
+      "app_id": "org.sentinel.DockEnhancements",
+      "dependencies": [
+        "libwayland-client",
+        "mesa-libgbm",
+        "mesa-dri-drivers"
+      ],
+      "sha256": "d015e1ec62127924a6b87b2b76ebe2ccfdd9df0ba98ccc5ebc8ccf3de56cc2a3",
+      "size_bytes": 10362306
+    }
+  }
+}

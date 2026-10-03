@@ -39,6 +39,7 @@ flatpak install sentinel org.sentinel.Gutenprint
 flatpak install sentinel org.sentinel.SANE
 flatpak install sentinel org.sentinel.SystemHealth
 flatpak install sentinel org.sentinel.Contacts
+flatpak install sentinel org.sentinel.PartitionManager
 ```
 
 ---

@@ -1,0 +1,21 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-partition-manager": {
+      "archive": "sentinel-partition-manager-1.0.0-x86_64.spk",
+      "version": "1.0.0",
+      "type": "application",
+      "description": "Official Sentinel Partition Manager for Sentinel Linux (Native Rust + Slint storage management suite with A/B safeguards, secure erase, image flashing, disk cloning, bad sector diagnostics, and lost partition recovery)",
+      "security_realm": "AdminRealm",
+      "app_id": "org.sentinel.PartitionManager",
+      "dependencies": [
+        "Sentinel-Hardware-Framework",
+        "Sentinel-Terminal"
+      ],
+      "sha256": "3f051684f0063c7aafeabbed32adf7d58ac95af7f325da1d46c88ebdaf8d0730",
+      "size_bytes": 12910245
+    }
+  }
+}

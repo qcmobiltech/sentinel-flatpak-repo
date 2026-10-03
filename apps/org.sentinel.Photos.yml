@@ -11,11 +11,12 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --device=dri
-  - --filesystem=xdg-pictures
+  - --filesystem=home
   - --filesystem=xdg-run/dconf
-  - --filesystem=~/.local/share/sentinel/photos:create
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.freedesktop.portal.FileChooser
+  - --talk-name=org.freedesktop.portal.Desktop
+  - --talk-name=org.freedesktop.Flatpak
   - --system-talk-name=org.freedesktop.Accounts
 
 modules:

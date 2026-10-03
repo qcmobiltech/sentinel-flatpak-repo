@@ -1,0 +1,11 @@
+Origin: Sentinel Linux Security Engineering
+Label: Sentinel Security Tools Repository
+Suite: current
+Version: 1.0.0
+Codename: engineer
+Date: Sat, 03 Oct 2026 23:22:12 UTC
+Architectures: x86_64 all
+Components: main security
+Description: Official cryptographic package mirror for Sentinel Security Toolkit
+SHA256:
+ a100883310b6366746cb7a4354c75b89b8dc31d5771ee293f63383d46abb13f1 45870 Packages.json

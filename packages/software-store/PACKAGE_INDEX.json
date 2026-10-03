@@ -1,0 +1,18 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-software-store": {
+      "archive": "sentinel-software-store-2027.1.0-x86_64.spk",
+      "version": "2027.1.0",
+      "type": "application",
+      "description": "Official Sentinel Software Store (Vault) — Memory-Safe Quad-Source Package Manager for Sentinel Linux",
+      "security_realm": "AdminRealm",
+      "app_id": "org.sentinel.SoftwareStore",
+      "dependencies": [
+        "Sentinel-Hardware-Framework"
+      ]
+    }
+  }
+}

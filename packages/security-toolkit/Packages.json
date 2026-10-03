@@ -1,0 +1,822 @@
+{
+  "repository_name": "Sentinel Linux Security Tools Official Repository",
+  "origin": "Sentinel Linux Engineer",
+  "suite": "current",
+  "version": "1.0.0",
+  "architecture": "x86_64",
+  "generated_at": "2026-10-03T23:22:12Z",
+  "total_packages": 90,
+  "total_size_mb": 0.67,
+  "packages": [
+    {
+      "package": "sentinel-sentinel-aircrack-ng-1.7",
+      "filename": "pool/sentinel-sentinel-aircrack-ng-1.7.spk",
+      "size_bytes": 1186,
+      "sha256": "44bb56d27864e66a9206211546b4329f0f8e07d3dc0a3d41a5d2bd3f965bb688",
+      "sha512": "0aabd8cedd76291f7ab5afd7e83ebb10350cd195642d0ca004eb515eac705b13354d2efe904dc54e22fab5906aa8bc5786fabc7e75a479f2a713a46d5891a9d3",
+      "signature_file": "pool/sentinel-sentinel-aircrack-ng-1.7.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-airgeddon-11.20",
+      "filename": "pool/sentinel-sentinel-airgeddon-11.20.spk",
+      "size_bytes": 1110,
+      "sha256": "b5e9a974ea87fdb5cc0c902264361143a3cca96ad854a00e713c6e76d5cbd94e",
+      "sha512": "5d40d6221b5af579ab21275a536d9c8199f4fedb101c269b342189cd453ea4fe97c481b28810678199dd31e8a5a07a093692cc608ce8a5f01e29b98da909a94f",
+      "signature_file": "pool/sentinel-sentinel-airgeddon-11.20.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-amass-4.2.0",
+      "filename": "pool/sentinel-sentinel-amass-4.2.0.spk",
+      "size_bytes": 1063,
+      "sha256": "9e17e0941b7052423259c9b2f6bf14852f363fe161c38ec98f3f3000f19c9d9d",
+      "sha512": "87011aef1daefb74ddf7c6a06dbd454799410a4ceefd020b1eb106078709171cf0ef636e5fc8eff6b0d4c1d2fc9378f121e2fbd8b613ab65c8d8423ca30aa4cb",
+      "signature_file": "pool/sentinel-sentinel-amass-4.2.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-arp-scan-1.10.0",
+      "filename": "pool/sentinel-sentinel-arp-scan-1.10.0.spk",
+      "size_bytes": 1082,
+      "sha256": "e5c45107d3cc6211a8584f48ed3a6885bdd967e56ed1c42e7e0a1fea2390300f",
+      "sha512": "351a970973fa33e32a4ff39fb0ee9472189b9547204cab6ef543c57f907c04c94c9eec8898726d590f9a6a85e91458c5387cc832c71461adc119e032b52ac646",
+      "signature_file": "pool/sentinel-sentinel-arp-scan-1.10.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-arpwatch-3.3",
+      "filename": "pool/sentinel-sentinel-arpwatch-3.3.spk",
+      "size_bytes": 1068,
+      "sha256": "0daa376ad3a97c0e41a6002ee814468018bc966524d0134ea6579d2db015450c",
+      "sha512": "36f39b7ab36cf04437507bb54ba36ff076e99109836cd8a26949d6c353ea793300e65c3623ff24a2ca32ee207b8d65211236e3ded40cedd34f8e65bba866e784",
+      "signature_file": "pool/sentinel-sentinel-arpwatch-3.3.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-assetfinder-0.1.1",
+      "filename": "pool/sentinel-sentinel-assetfinder-0.1.1.spk",
+      "size_bytes": 1031,
+      "sha256": "a44d41208e63a00b636466dc796d0f6f9eca8ff753e56eb2e0102941a4e8844c",
+      "sha512": "923329d985d5a39aec2129e4ab3eb90d18678d848c569536c67ec0671973205e561653409ea85b74a00b74b1c48dedc07e0740ec9e18e8fb96e6b102f64f339d",
+      "signature_file": "pool/sentinel-sentinel-assetfinder-0.1.1.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-bettercap-2.32.0",
+      "filename": "pool/sentinel-sentinel-bettercap-2.32.0.spk",
+      "size_bytes": 1103,
+      "sha256": "c431afef272a8d5013375046a608b8d36864ac4573aff5e39bc239d32d8185ae",
+      "sha512": "1f77009cf2a2be9356c799e662fa39aa47df7a01cb48dc87b591f359f3e397162f9b932db75942850a90cd8aeba494c0634e72b149207c2c34f4b2177e2219c9",
+      "signature_file": "pool/sentinel-sentinel-bettercap-2.32.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-binwalk-2.3.4",
+      "filename": "pool/sentinel-sentinel-binwalk-2.3.4.spk",
+      "size_bytes": 1027,
+      "sha256": "5d93271f7c5246cbe033fede6a8a7faa92f741e7375edcf1b2af5ea6e8e93f1b",
+      "sha512": "cd3c7eb8720b900a041c95b9ed7cf7cbbd4e5efd48d1002e8e52394387109edc5b4ef4c6f7891ef5b23be888878d7f7b5e39c50fc42529bafe367fbdfdcd2723",
+      "signature_file": "pool/sentinel-sentinel-binwalk-2.3.4.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-can-utils-2023.03",
+      "filename": "pool/sentinel-sentinel-can-utils-2023.03.spk",
+      "size_bytes": 1089,
+      "sha256": "00dc94cccfa9fe8522cc93bfa0495be7fcbcee3cbaf50e604dd6fc341f2cb8f1",
+      "sha512": "f440419cf63cd6c63bd2c441fbec28e33727501ff0dbc3243f3517ea985db7cbb09bc0c64faee2a73ac67140dbf295779f64bd922149f1809b03255e8578fe8b",
+      "signature_file": "pool/sentinel-sentinel-can-utils-2023.03.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-cantools-39.4.5",
+      "filename": "pool/sentinel-sentinel-cantools-39.4.5.spk",
+      "size_bytes": 1060,
+      "sha256": "0f088302aa15289768830fca4c1ed70017af202850fb8ffed1b1bb1fb02cacc2",
+      "sha512": "bb5d2077c08235571dd5ae233d67eed2510f78febc8fcc50126db714ac622e156ec770c6c69621e0c7295631aecae386ac892e75447a8eb56535b8b48da43849",
+      "signature_file": "pool/sentinel-sentinel-cantools-39.4.5.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-capa-7.0.1",
+      "filename": "pool/sentinel-sentinel-capa-7.0.1.spk",
+      "size_bytes": 1005,
+      "sha256": "3fcc0bef7a2df0d9b0c99196ad69a301f7fe6aad524642f05554f4531fe3ab1c",
+      "sha512": "b8afdf99ee83b74dbbaf57cf6e30d2c583b92d142decf2fefff86d99e401e2f411ab7127696a87b885df6829c7cdb19918f8511ba17930f8a61af9e4a080d7d8",
+      "signature_file": "pool/sentinel-sentinel-capa-7.0.1.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-certipy-4.8.2",
+      "filename": "pool/sentinel-sentinel-certipy-4.8.2.spk",
+      "size_bytes": 1055,
+      "sha256": "b6282d56e391388f3b0d0bc891e85611b5ed6b7d9a775130e78b75c76c5d6540",
+      "sha512": "a73776bc7566c51eeba5d62a310fe5d538e5f58f12de51c30357d1f5a2966655d4be6997cbf2c21a7b910d12aa10a16213a27216f243bffc826552f36228a2dd",
+      "signature_file": "pool/sentinel-sentinel-certipy-4.8.2.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-cewl-5.5.2",
+      "filename": "pool/sentinel-sentinel-cewl-5.5.2.spk",
+      "size_bytes": 1041,
+      "sha256": "366819f856bf95fd785749d802ed4e76cf35501f843e88c536ce3ab31c293ad5",
+      "sha512": "62ef3d3fc9660d09edc7dbdc9e33e66d4521c14cfca1a6e49e07da643179c85af144caf10f0d1df7bc93d722a118c2b302142c0b867136d6a0d596f0b6f43890",
+      "signature_file": "pool/sentinel-sentinel-cewl-5.5.2.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-checksec-2.6.0",
+      "filename": "pool/sentinel-sentinel-checksec-2.6.0.spk",
+      "size_bytes": 1043,
+      "sha256": "7c4af1d7f0b7c7c22bd5690ef6e83267682f3cb2cb9bb001aefd92e239100b36",
+      "sha512": "9b98256be9b39633830b9cef1e19cdc0dd30d558898f57cbbc89edb8fadf29f0123014b4d8f996c8e5c1a3ccb9e1928a6c5462767bca256f5c1c93a1fbe2079d",
+      "signature_file": "pool/sentinel-sentinel-checksec-2.6.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-command-center-1.0.0",
+      "filename": "pool/sentinel-sentinel-command-center-1.0.0.spk",
+      "size_bytes": 609004,
+      "sha256": "0fd3d4590361383e78935fc8a3c1337441bdd9caaba31ca9d7bc3368790af2ad",
+      "sha512": "06dc1ae3a9f197264b7113a9565035086922fdd33aaedf212ea7bebf29b09c304d36d27243a975c0693d9c5c237fc3cc9d428cacb92f436e5f4fadd40f0c168c",
+      "signature_file": "pool/sentinel-sentinel-command-center-1.0.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-crunch-3.6",
+      "filename": "pool/sentinel-sentinel-crunch-3.6.spk",
+      "size_bytes": 1037,
+      "sha256": "e7f237f028b48d43613469d9d15200fa4e0b0f1ed6d8e2aad68da3acb76676cd",
+      "sha512": "89645603a6a539ab3db478d6431610d69351870427923d17ca82c2e1bd017cda5dc5aad1b7ed71ce56884347de1ad4b58c754d8fa9571eaf2054537aca47ac67",
+      "signature_file": "pool/sentinel-sentinel-crunch-3.6.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-dc3dd-7.3.1",
+      "filename": "pool/sentinel-sentinel-dc3dd-7.3.1.spk",
+      "size_bytes": 1083,
+      "sha256": "295aa8b52991d6c0718b7a4dcf31717efcd780e6bd6807343606f0e8bcbe7882",
+      "sha512": "c74e5950441c022d3e6b848f45bbde4e203c070e7141de3bd038090a9e4ea6808b06adc7f1723cad94ed8ea47e313b9c721be0fc61da72dfde306a308fb0ccff",
+      "signature_file": "pool/sentinel-sentinel-dc3dd-7.3.1.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-detect-it-easy-3.09",
+      "filename": "pool/sentinel-sentinel-detect-it-easy-3.09.spk",
+      "size_bytes": 1041,
+      "sha256": "3ca5f5f77f9510172254c20d8aa2f6f47a4e4fdf8eb07cfbaec6141fb6c561fe",
+      "sha512": "f5cbd38bf5ea016772321775dcb8102e377507ff776feb1350c9a9fb118c83ec9dfbd99f39d14f1f80f9faf9a753412dfa72b06e8e857ae7dc57d125aec8c943",
+      "signature_file": "pool/sentinel-sentinel-detect-it-easy-3.09.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-dirsearch-0.4.3",
+      "filename": "pool/sentinel-sentinel-dirsearch-0.4.3.spk",
+      "size_bytes": 1031,
+      "sha256": "37311677f828604e92faff427443b8abe77bdee9567bb6bd4e5a30c5844bc2bb",
+      "sha512": "dd165cd955d6c7477718d13eabdcd157364ea5583ea9fe571545dd7aa90f627a355082128d7f29a7da32be38403fa6d88d09890503de93b56f964b9c82ef7b14",
+      "signature_file": "pool/sentinel-sentinel-dirsearch-0.4.3.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-dive-0.12.0",
+      "filename": "pool/sentinel-sentinel-dive-0.12.0.spk",
+      "size_bytes": 1033,
+      "sha256": "659a4068c264fa893f5345f07d41f57edad2242546fdd8e2161d8e5ad0b37dca",
+      "sha512": "107b0ed054ec849e47fe368bf8a062f700503f8811a7977cc9fa74f68b9cdffe028cf0a263d933859c7566a3024cac96e0d86afda8350fa999db0c954add59f6",
+      "signature_file": "pool/sentinel-sentinel-dive-0.12.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-dnsrecon-1.1.5",
+      "filename": "pool/sentinel-sentinel-dnsrecon-1.1.5.spk",
+      "size_bytes": 1021,
+      "sha256": "3332252f572c56073ba933968d9613c5afdc084beed5551a193f18be2be06beb",
+      "sha512": "aaff804066f96f0676a4865897de4966bca2ded65050aa6c2db5f882397cfd368afb512536d18af736b67f3f8e0afddb7664382499b65b44a68be3289a2ef8e7",
+      "signature_file": "pool/sentinel-sentinel-dnsrecon-1.1.5.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-docker-engine-26.0.0",
+      "filename": "pool/sentinel-sentinel-docker-engine-26.0.0.spk",
+      "size_bytes": 1390,
+      "sha256": "af165d25815cc51ad50b2b0466db2389898a679d77c8d8bd2122d489ecf8385a",
+      "sha512": "a4bf7a5d349e99f882515267812addc59b90469411cd33b809671f13e7d52f858670e14ac83f5e085ac1a4a5e425d3873b03827bf13d9f9a80682d10c18ff396",
+      "signature_file": "pool/sentinel-sentinel-docker-engine-26.0.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-enum4linux-ng-1.3.3",
+      "filename": "pool/sentinel-sentinel-enum4linux-ng-1.3.3.spk",
+      "size_bytes": 1036,
+      "sha256": "2c508a967ce413985ee9febb646e63c71e7e5ec0439270892d2fafce96ffac4d",
+      "sha512": "092c90767bd0304a93908ad6023cb0415cf951030f8adfe1dac5980e11a05fc99d6a313b530be737fb7652eb0622ad654d15c359c1f1e48ea8b53c2845be8c2f",
+      "signature_file": "pool/sentinel-sentinel-enum4linux-ng-1.3.3.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-ettercap-0.8.3.1",
+      "filename": "pool/sentinel-sentinel-ettercap-0.8.3.1.spk",
+      "size_bytes": 1107,
+      "sha256": "78e7391df23605de348eaa1e7ba3f654378d348d02072ecd4ff316f74932558b",
+      "sha512": "3b7700d4cbb8ce0f97e66a0fb204417e3050b30add2df49e8348817438f8503cbc4cb80a8651671eefd26ff0c04453d1ed3ab1154601a67c7d9a3df6754049ca",
+      "signature_file": "pool/sentinel-sentinel-ettercap-0.8.3.1.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-evil-winrm-3.5",
+      "filename": "pool/sentinel-sentinel-evil-winrm-3.5.spk",
+      "size_bytes": 1031,
+      "sha256": "e6f6532215d005623cf9ad963ed7d5582ad0d97a5c920a1d040c6be60589242f",
+      "sha512": "f23593113f6df175b02dad7d5d4a35abec2bae1edb3864aa72a4aa9816a3961a0f9a9fa2bad7a45195735b9537a3a08c12e5da3bba7a853bd58d67bed577446c",
+      "signature_file": "pool/sentinel-sentinel-evil-winrm-3.5.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-exiftool-12.76",
+      "filename": "pool/sentinel-sentinel-exiftool-12.76.spk",
+      "size_bytes": 1046,
+      "sha256": "8ddab37f6fbf9c87a804d27d74b85f4e9aad461a11019baf5131007106794e5e",
+      "sha512": "93683a9a858c3e64db66ee1306164d85465bc891ec4fc059c9e954bc51e117b2e951303f79c4a3849ffa2b23dd62ad5af15aff5996a5a3c88590809f7eed53f0",
+      "signature_file": "pool/sentinel-sentinel-exiftool-12.76.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-feroxbuster-2.10.1",
+      "filename": "pool/sentinel-sentinel-feroxbuster-2.10.1.spk",
+      "size_bytes": 1008,
+      "sha256": "2ecb995e8c3134976dfac77cc7dd6616a7d2d11112be46bb0a87f7ad335ae6a6",
+      "sha512": "4e8238a57219da49a528d64363d50283c63d793c48d3c7772e380eb4189d43fd9f1d1640f2defeaf059d0af9418544dfcf8738736a16e2200ebbf0e063a6b66e",
+      "signature_file": "pool/sentinel-sentinel-feroxbuster-2.10.1.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-ffuf-2.1.0",
+      "filename": "pool/sentinel-sentinel-ffuf-2.1.0.spk",
+      "size_bytes": 1100,
+      "sha256": "43a43dde5ba6605d4d11951ea4f9bbbccde103c3943701d7d6caf55e8dd0d950",
+      "sha512": "d4fb43efcb4eb49f695d19953e16bfe8d08b71603f086df49f59fb9220ff5192f2987c8a58ad080c5a2ba104620595471c7eb73591b89703b4f4158cfc5927ee",
+      "signature_file": "pool/sentinel-sentinel-ffuf-2.1.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-floss-3.1.0",
+      "filename": "pool/sentinel-sentinel-floss-3.1.0.spk",
+      "size_bytes": 1015,
+      "sha256": "bdcaf2dfeba126fc6d85902fa3b3108bff500c67ebdd472c5ddf6c5541d31852",
+      "sha512": "401a31adf91b95eee146eb5b7422f234c438f1575568bb2adb9316e8dbafca5e33a410ce14d5e6996aa174d716ee1ca3b5d4139f73a703d3f20c83c26b1cf922",
+      "signature_file": "pool/sentinel-sentinel-floss-3.1.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-foremost-1.5.7",
+      "filename": "pool/sentinel-sentinel-foremost-1.5.7.spk",
+      "size_bytes": 1058,
+      "sha256": "115b046f9c229c8e88dc9e2760ccb7437085af54317d87ec2e893f2cfd4a1701",
+      "sha512": "30d2b4d2e8a43deb0338c1581bc7ed3f9770e4a0dafe504ac64283835ae0e1807b2e36bf1595c1b919d6c242f9a844775cd9ff5a0aa1e2317bf1dedc9b29f625",
+      "signature_file": "pool/sentinel-sentinel-foremost-1.5.7.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-gdb-14.1",
+      "filename": "pool/sentinel-sentinel-gdb-14.1.spk",
+      "size_bytes": 1051,
+      "sha256": "f42c1c96e633fcb4fd565a1317ef83a507273922204337c910bd77b8625e930d",
+      "sha512": "9b165fd09211d240d9fd7974d782ff5822fa2e06b6dec1cda86a5e8a169c2bd88dc336dad46f983bfdad0dd606bc8ab933e5e3caf5cc27e9f241c9a29bc54b16",
+      "signature_file": "pool/sentinel-sentinel-gdb-14.1.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-gobuster-3.6.0",
+      "filename": "pool/sentinel-sentinel-gobuster-3.6.0.spk",
+      "size_bytes": 1053,
+      "sha256": "dc02c59ed61e8e3ccbb7ec590c9e55e2f85c5b228ecf0ba2ed20cca7d652ed28",
+      "sha512": "b83996cde27ddc38f969d09485c0ca1e7c9e559d3c0be3195a02a2b646a800c8926c207529446edc97333e9bde414a2902b065f3bb15be42e3a055fb9530740b",
+      "signature_file": "pool/sentinel-sentinel-gobuster-3.6.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-grype-0.74.0",
+      "filename": "pool/sentinel-sentinel-grype-0.74.0.spk",
+      "size_bytes": 1003,
+      "sha256": "90e75b960052f89265471a7dd58d83599b1ed3f7c2760fd4b12ba9852ea30df9",
+      "sha512": "5c7717e002fae0dc7254e28a56cd0afbb091ef0a16c230d216447c86c2e6e149831f6b527ed45e8802f3bbc346bf38c087cb368ff2d04a14bb324a5c25d7cb38",
+      "signature_file": "pool/sentinel-sentinel-grype-0.74.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-hackrf-2024.02.1",
+      "filename": "pool/sentinel-sentinel-hackrf-2024.02.1.spk",
+      "size_bytes": 1114,
+      "sha256": "078b098db76e01d3c9ec4f502b9ce28a699d8f2c744f8a132d50ce2ea18c42ff",
+      "sha512": "ef84d80c9f9aa2f5097ebde186fbcefa50f2997ed8d967a41f19ef0794cf99ccf0e324797af3a5b6dac148a4021fc3c99687af638d813e123787f08b2e126edf",
+      "signature_file": "pool/sentinel-sentinel-hackrf-2024.02.1.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-hashcat-6.2.6",
+      "filename": "pool/sentinel-sentinel-hashcat-6.2.6.spk",
+      "size_bytes": 1085,
+      "sha256": "67014506de0d8a1ce4f2558a2c0c78fd5447e16cdbef001365943611fa5f52e2",
+      "sha512": "156b6620fe4a7e7b5a5efd53edeb53ea6cbbcda1262af84b691fc81cad3bd98d7f82fe482847205478287a7d97627b0950df8f3a72981b1a4f9fbe7842efc3c7",
+      "signature_file": "pool/sentinel-sentinel-hashcat-6.2.6.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-hashid-3.1.4",
+      "filename": "pool/sentinel-sentinel-hashid-3.1.4.spk",
+      "size_bytes": 1009,
+      "sha256": "18f76fcb2ddf64dca2cd8c92b63a00229de68890ac281724f3fbd05f328ff338",
+      "sha512": "43c2f5f5fde1e43f6e7b27967c0784def0ad6823cb8ce01a624aa473048a6493856f1a63b0749719b771dd66602246fa33569116515d37ba9d16bb10d24d79c8",
+      "signature_file": "pool/sentinel-sentinel-hashid-3.1.4.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-hcxtools-6.3.2",
+      "filename": "pool/sentinel-sentinel-hcxtools-6.3.2.spk",
+      "size_bytes": 1054,
+      "sha256": "51eed57a9c1c3466a7aebcf3a85806559a0b613409038a12e5b00dda021c30f3",
+      "sha512": "f8f35a011750682e07d9428077978a7e6c079633774d8419a4a05362f4b3fe44693e282b8ab3cbc296c3e1b7cf182e0765238bbc549a1a87f02e7af72df03e09",
+      "signature_file": "pool/sentinel-sentinel-hcxtools-6.3.2.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-hping3-3.0.0",
+      "filename": "pool/sentinel-sentinel-hping3-3.0.0.spk",
+      "size_bytes": 1084,
+      "sha256": "7cf8ff659b546754fa3c083c265ce93d638fb41c818a568414f66b3fb0aeafb4",
+      "sha512": "b8633953d724500a9410a055e79c72c79c4d95d7f91f00934cae954850db36289392c43bc4e3ce1dc2b243873eac758b7e832527710d2bbf247eb74350f640e4",
+      "signature_file": "pool/sentinel-sentinel-hping3-3.0.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-httpx-1.6.0",
+      "filename": "pool/sentinel-sentinel-httpx-1.6.0.spk",
+      "size_bytes": 1049,
+      "sha256": "0768c94e27a4122753a6685a331019cc4141f90a8e166f0b75e970d0607b5713",
+      "sha512": "29feb1b10092424eeacd8fb1e27c21898f9a6492c01cdcd9da14ea1c64e34607fa357c2e8b5c5a2b80eb961f99e9026486b536dde64a8a15e5eb7db978a8534c",
+      "signature_file": "pool/sentinel-sentinel-httpx-1.6.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-hydra-9.5",
+      "filename": "pool/sentinel-sentinel-hydra-9.5.spk",
+      "size_bytes": 1059,
+      "sha256": "3fd00e40fbae8dbfd0b98930a5b877d83a39407c5a2662213812c45fbfbffaf4",
+      "sha512": "671d826f28aaa6f8176db3ad2ee019eac0b9597b32df2b5d3936c3972ae3ef3ffc56a9ad8291fbf68f2a689eee61e0ef6d5ff58feaa428d942dadbb9a98c0278",
+      "signature_file": "pool/sentinel-sentinel-hydra-9.5.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-impacket-0.11.0",
+      "filename": "pool/sentinel-sentinel-impacket-0.11.0.spk",
+      "size_bytes": 1076,
+      "sha256": "017cacf298b0f13edd372baefc0d8fbc4eb5f0c43716968ab59f533881384b10",
+      "sha512": "afb9c1dcfa57619971e0b6119c7c5ca36094bbda952858a17ec1d8c739f44884d6d22ca8f3bbeb32a4eeb3a817552ba3703e8d620d5a253922e5d591b19a2c32",
+      "signature_file": "pool/sentinel-sentinel-impacket-0.11.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-john-1.9.0-jumbo",
+      "filename": "pool/sentinel-sentinel-john-1.9.0-jumbo.spk",
+      "size_bytes": 1086,
+      "sha256": "1215ea46d57e583e3ccf27f4392724bf074e25f8bf24849d9ef59b170fad55ec",
+      "sha512": "5f713b4d6a6815b6ebd790525989ceb3541f16ff2c076a2ad0a7d119dba724dbe061edf9452113b4b948f1b8fa3ae1856b53eec8d71d271194b86b78d2544be2",
+      "signature_file": "pool/sentinel-sentinel-john-1.9.0-jumbo.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-kismet-2023.07",
+      "filename": "pool/sentinel-sentinel-kismet-2023.07.spk",
+      "size_bytes": 1098,
+      "sha256": "8957e61c562c39dc6f3dd2da7ef856327a772dba0b151430c9f5f5a8243932f2",
+      "sha512": "222a639abf7cc8fc28c8bdc8ce22b0b79f58cdbe84a4dde7b3f5b420a5f37eb96907e6dc9736a50cf1e92311d902ff49db7beef0f2c6b7270b38ac24d242658c",
+      "signature_file": "pool/sentinel-sentinel-kismet-2023.07.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-masscan-1.3.2",
+      "filename": "pool/sentinel-sentinel-masscan-1.3.2.spk",
+      "size_bytes": 1100,
+      "sha256": "8558a100cf1dbd6500463f7a66532e457afd34fab681a688d702fea2c1bee9da",
+      "sha512": "23c1ca5c6ce814560b4598342df8922621289b24e5744980091bcee424ae6ff73f0ef5eae24497dd2606715c80792ef4debf82c29014c0ca3245168555c0f916",
+      "signature_file": "pool/sentinel-sentinel-masscan-1.3.2.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-medusa-2.2",
+      "filename": "pool/sentinel-sentinel-medusa-2.2.spk",
+      "size_bytes": 1056,
+      "sha256": "d466aef473868d1f2ee81fd7391981fe911935acc780da22ab2bb72fc2bc465e",
+      "sha512": "abb56ea8e127020b53d66f5dea2bc90e6a3b2c973a72dbf544687beb5d30d94a1c3f84a403c7a3b61ab546c65d08fdebbaa41ab728036ca1b3615963cec3afde",
+      "signature_file": "pool/sentinel-sentinel-medusa-2.2.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-naabu-2.3.1",
+      "filename": "pool/sentinel-sentinel-naabu-2.3.1.spk",
+      "size_bytes": 1020,
+      "sha256": "22ed013673addcdf8e70713513a85e1ebea36c2876835bc08513d3a56dd8eca3",
+      "sha512": "8d0f6902ece04363ca4801ccd03650384694621c90136bc2d492bc4e654bcf8ac3bcbe7ab7a7325620939a7768c102eae8f611281c68a364010f732b48e612f9",
+      "signature_file": "pool/sentinel-sentinel-naabu-2.3.1.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-netdiscover-0.10",
+      "filename": "pool/sentinel-sentinel-netdiscover-0.10.spk",
+      "size_bytes": 1086,
+      "sha256": "46bcf061f491edb1e6c156e34e8ba9ba2893502697e67d8a72e0567813519a50",
+      "sha512": "b2e47ddcbbd3b3153820513b035e20a8a83b291628ea7121854bad2ff9d1b3572fed9d5d26bc0057c19eb20645f0965720518fc609ff8018514ac9e3216a1582",
+      "signature_file": "pool/sentinel-sentinel-netdiscover-0.10.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-netexec-1.1.0",
+      "filename": "pool/sentinel-sentinel-netexec-1.1.0.spk",
+      "size_bytes": 1088,
+      "sha256": "794c4492a6be568a15284e20059592e68e7e56d4fdb9fda8d7bfbfc9f8fda4e8",
+      "sha512": "a46be6e7ae0f507071504ce92b672dcc1de2da4be0f600e280fb756dcda29aa7977386c3fae59c803918b07325212dee2787b388b190b7219f222bf5fee50c06",
+      "signature_file": "pool/sentinel-sentinel-netexec-1.1.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-nikto-2.5.0",
+      "filename": "pool/sentinel-sentinel-nikto-2.5.0.spk",
+      "size_bytes": 1030,
+      "sha256": "12893b3b3b5be94711f302038184b3f23255cefc9cc3e8a8f841bb428014fb72",
+      "sha512": "e9c86342e7fdeeec6ddc413154c08a26d2b8c74bed0e8830f9a1f3af0dcee224862ef2208a6a39f162643f6af243f9c4697aef4a0169a6ce3703d4b534dd3408",
+      "signature_file": "pool/sentinel-sentinel-nikto-2.5.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-nmap-7.94",
+      "filename": "pool/sentinel-sentinel-nmap-7.94.spk",
+      "size_bytes": 1165,
+      "sha256": "7696b79b369f2be23a9187cab7722a4b7284e68bee0ae0b50ed331fdd2735ee0",
+      "sha512": "65e89803b7b629cd8014f6f52f944cde708b376ae5182377247a3ea6d11195bdf55e425e9c256b90d83b1f362331c7616e28fbfd49b4886ef14229d8910945cb",
+      "signature_file": "pool/sentinel-sentinel-nmap-7.94.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-nuclei-3.2.0",
+      "filename": "pool/sentinel-sentinel-nuclei-3.2.0.spk",
+      "size_bytes": 1022,
+      "sha256": "272e53877ea948338909c9274de4a6d21061ed74cb99b9961f51e683e205295e",
+      "sha512": "ef4730592c67e27a6a1294f4347ebfdf8007bd63e2d9f3ae781219b62796bbae9b073bb736ba12f428abd4802e6e0d03f0c129de8671c3ee8b3479868018d2b8",
+      "signature_file": "pool/sentinel-sentinel-nuclei-3.2.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-ovmf-2024.02",
+      "filename": "pool/sentinel-sentinel-ovmf-2024.02.spk",
+      "size_bytes": 1236,
+      "sha256": "115544c046b7fc055d2542dbdf52230694d433aa0d9152c5e6bf77751ea4f59b",
+      "sha512": "05624173078928644d6f30593eaf6d0c404b6c63fa2edaef3b2e696410187f3b0ff5ee15649c9d720c6578b35918e991ee6283f255cfce65d6b55368a62ab844",
+      "signature_file": "pool/sentinel-sentinel-ovmf-2024.02.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-p0f-3.09b",
+      "filename": "pool/sentinel-sentinel-p0f-3.09b.spk",
+      "size_bytes": 1065,
+      "sha256": "7b14bb9833c49fefd1fb9f9439860e18d35fe261d0848d15cebb7fff61c14831",
+      "sha512": "d12fe8b09dd6988bb4a998d06efb206bdc0e4f36b829a7237cc2b4a6cf294c9e58172b5bbdaade953200e88e893074a30f806a8acb019744279563e7286094bc",
+      "signature_file": "pool/sentinel-sentinel-p0f-3.09b.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-proxmark3-4.17140",
+      "filename": "pool/sentinel-sentinel-proxmark3-4.17140.spk",
+      "size_bytes": 1032,
+      "sha256": "7dee253e3974cc01c81a5e230387429ef14f2e3f501c5c4f42a5aa70769ccd98",
+      "sha512": "eb19687186709d322bceccb31e63e41aad378cf04cfcd09696a09c50355f077063f4c8ce09c9c3dc81c8920fc78652a003bd5ea794845786877776b0a76057c9",
+      "signature_file": "pool/sentinel-sentinel-proxmark3-4.17140.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-qemu-8.2.2",
+      "filename": "pool/sentinel-sentinel-qemu-8.2.2.spk",
+      "size_bytes": 1395,
+      "sha256": "219e56bd61ea476a2a7ab4d9ae5fd6543cf80143340cceb45e337798db38dd7e",
+      "sha512": "9de4f860634a9903b880607c6dbd798a2220b0bd01ce6d0186f6c7fbb4168f8738775de850c2d908e179ba4d2d58c939820bbcc098fb0cbbc1ac9809da073506",
+      "signature_file": "pool/sentinel-sentinel-qemu-8.2.2.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-radare2-5.9.0",
+      "filename": "pool/sentinel-sentinel-radare2-5.9.0.spk",
+      "size_bytes": 1029,
+      "sha256": "18c5cf5de473b3bd77c3964f34ed6e130ec84b59e08071d91265ebe361a7053d",
+      "sha512": "b4cd992f74b8ffb3e53ccf8924f88336d0a1a24a3386ff35c53df1729974ea0ff7ef4114dcb9b64317a239b6f1a85a336927d3519aa0c41788de809f8daf0cbd",
+      "signature_file": "pool/sentinel-sentinel-radare2-5.9.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-reaver-1.6.6",
+      "filename": "pool/sentinel-sentinel-reaver-1.6.6.spk",
+      "size_bytes": 1053,
+      "sha256": "380d7bb8c5016fb8bedc40db54a98df1b748adfbf292795ad0768714d73d1ab9",
+      "sha512": "aef2aa0399a60cfe28c918c0b685a1324da3e590fb8364199e73d2a907e95e2ab1288e95c726f1658c66f4ba1b0604645063c6347a7e3d038f3b08b19e12f914",
+      "signature_file": "pool/sentinel-sentinel-reaver-1.6.6.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-recon-ng-5.1.2",
+      "filename": "pool/sentinel-sentinel-recon-ng-5.1.2.spk",
+      "size_bytes": 1012,
+      "sha256": "f2f6aa3cc86a899a63e1435b73718ad25879e5566ca6da8667e7f90e7dfe7f5b",
+      "sha512": "1fdf3e9cbb30107b19cef8a4cab496e5bdbc4f5b9cc5c24cf5e77acdbbd7bbb605dbd749f232be93bdbd81b0d8fb33172b31f38673f38262f8ff17e701288565",
+      "signature_file": "pool/sentinel-sentinel-recon-ng-5.1.2.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-responder-3.1.4",
+      "filename": "pool/sentinel-sentinel-responder-3.1.4.spk",
+      "size_bytes": 1033,
+      "sha256": "f53d45be804eae0fa419df1d4c428f81dde42f244afa6063d5fc38ece07b2f25",
+      "sha512": "4df71417e4cfc97644c69532880abfad6a7a6de2fe2193c66c11bde7173cfe1145b376fa62704adba15946cb648491c08e7aea02741e7aeb86d78f2ee583656a",
+      "signature_file": "pool/sentinel-sentinel-responder-3.1.4.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-rizin-0.7.1",
+      "filename": "pool/sentinel-sentinel-rizin-0.7.1.spk",
+      "size_bytes": 1015,
+      "sha256": "a99c1e6a59adbfcee3f73678bae244adf28217dec80079bdd3c7fe317b99ac8a",
+      "sha512": "3a9965079497af06b169d0f2d447a0df6b3b420cd060569b4a9347544809219f639cc81a57f73b142fb96809cb58e9782f277f4e70c90a6bbb9aa676cf554867",
+      "signature_file": "pool/sentinel-sentinel-rizin-0.7.1.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-ropper-1.13.8",
+      "filename": "pool/sentinel-sentinel-ropper-1.13.8.spk",
+      "size_bytes": 1021,
+      "sha256": "893cbf135714c07ea577c323d61aed1ad516ac9da39894a1b673f774277383c5",
+      "sha512": "1fac70804dceb39d580901cafd824286a3aee7759920188918c2dd5d94d5e4cbdd465ed5a60241d7fe59e5fa8550aaa3a82c98864f9a61cf5c68dd6d2eeac376",
+      "signature_file": "pool/sentinel-sentinel-ropper-1.13.8.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-rtl-sdr-2.0.1",
+      "filename": "pool/sentinel-sentinel-rtl-sdr-2.0.1.spk",
+      "size_bytes": 1079,
+      "sha256": "b7cbfd9ebfc18daa30c23a8da5bacb659d5d9b25d0c1e924ff9700d0d2d482dc",
+      "sha512": "2b63d757d7256f4f2889b23f6b9d5fff69d35c2a96df6c67fb4a92be343ceced1065a2be200b84f4ef56ef690cbe5b325c31e976916636f0e82ccd58b718d96f",
+      "signature_file": "pool/sentinel-sentinel-rtl-sdr-2.0.1.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-rustscan-2.3.0",
+      "filename": "pool/sentinel-sentinel-rustscan-2.3.0.spk",
+      "size_bytes": 1051,
+      "sha256": "b2ab0b3ee6e25e7d42a29dc725a123d862be7b32fe58362f66f9dc6191ba3664",
+      "sha512": "cd59f16d30c635aa2425577a8b3b344898e33778159be82ba95318016e3d3ba02d0eb3f7e27d4f9fa333327099e7e9bc6b27ff3c634591e9cccf1e14bdf8a8b1",
+      "signature_file": "pool/sentinel-sentinel-rustscan-2.3.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-scapy-2.5.0",
+      "filename": "pool/sentinel-sentinel-scapy-2.5.0.spk",
+      "size_bytes": 1055,
+      "sha256": "3ef7e05278408b812e575883d41bea385fa61cbe4a9df50c4cd58af99febb208",
+      "sha512": "b01064aa6f2c981f9c0633ae81af9709ba15f7198616ae123f4c8ca5ef0ef520b0969bb0e073f59ffef25cbc5bda960ff4b7548a5ceb0ace77bcc0038b0c4fa8",
+      "signature_file": "pool/sentinel-sentinel-scapy-2.5.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-searchsploit-2024.03",
+      "filename": "pool/sentinel-sentinel-searchsploit-2024.03.spk",
+      "size_bytes": 1024,
+      "sha256": "3173864d8bd8498b45876bc8f1429a16d753d4bbf6cbc4801843b34ba54c66bb",
+      "sha512": "947077aba8508e4335d6d0278b815912659f09e9cc1f52c4e7bc2ad48a2cc351acb4983f239a60e2e33f153730416c4156a846207b458172340b29505a05917b",
+      "signature_file": "pool/sentinel-sentinel-searchsploit-2024.03.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-sleuthkit-4.12.1",
+      "filename": "pool/sentinel-sentinel-sleuthkit-4.12.1.spk",
+      "size_bytes": 1101,
+      "sha256": "a7648a7e074ba2cc7a3b0d5269fd2e42a8ace44f5b4ad2c5380198b861306bc7",
+      "sha512": "781dc7ec7797f3a5e7d3d5076367eb3c343883287764a8f26ba9e84ef1995109baaaf51875eb23d33612c401ca3ead20b43f6dde5f2c24d311b07b46061b630f",
+      "signature_file": "pool/sentinel-sentinel-sleuthkit-4.12.1.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-smbmap-1.10.4",
+      "filename": "pool/sentinel-sentinel-smbmap-1.10.4.spk",
+      "size_bytes": 1035,
+      "sha256": "b42216af401cf0f7104c9f7ed6bcbf25b0712e6344984fb3d7f96d59ed6e587b",
+      "sha512": "8a6503a5cb1eae45d0095b244781e6fbd0da70814f915fb2d0c7ccd63b72f2deba4619eca895fd3abc450ef663e545569bd33f1d8deffc70ca5accd189ba6bba",
+      "signature_file": "pool/sentinel-sentinel-smbmap-1.10.4.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-snort-3.1.80",
+      "filename": "pool/sentinel-sentinel-snort-3.1.80.spk",
+      "size_bytes": 1095,
+      "sha256": "89daf9dd61ab2fbd5783bc02977350327140be82adaa9075c650d148566f06f3",
+      "sha512": "81276e83d99357a98bcf76f20c511d5c29027af4d2af96de85c21fbebd6d789d6bfdc9cefdfafe18fd2c5112c11156db0ed0bcd88ec59084ca6baa6a12c609c7",
+      "signature_file": "pool/sentinel-sentinel-snort-3.1.80.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-socat-1.8.0.0",
+      "filename": "pool/sentinel-sentinel-socat-1.8.0.0.spk",
+      "size_bytes": 1044,
+      "sha256": "f231f418561f4dbc79c90f176efa59790264050f9c4541b8a9a7ebb36640ae99",
+      "sha512": "78b110609fb869bf8ceba230340ca84654e5c3aaeb6094adc188ca2a10f73bb916b85c8f908c53cb761f5a300a8a0632a14e395fa081641b618a1fdad65a60e8",
+      "signature_file": "pool/sentinel-sentinel-socat-1.8.0.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-sqlmap-1.8.0",
+      "filename": "pool/sentinel-sentinel-sqlmap-1.8.0.spk",
+      "size_bytes": 1086,
+      "sha256": "daa6cab77324e0ec42de923afa9f104d80b873d3e71bce8f7ef305e25afd0cf1",
+      "sha512": "0e965eaaad6d986db6b6f4cd8e83a89665fa7d1278a652118d404b752a751f15d1c8202316b55386a40c6eb8b0649942af8200b72d86618105a9472f751d63dd",
+      "signature_file": "pool/sentinel-sentinel-sqlmap-1.8.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-strace-6.8",
+      "filename": "pool/sentinel-sentinel-strace-6.8.spk",
+      "size_bytes": 1050,
+      "sha256": "48aa6c8bf8b11ca35228a90dfeb2a4c7f61908f58e81a33822f4b658c03cc8d1",
+      "sha512": "abc278f920b40204863c91f16f7b911796212aeddbaf49be93a6674fa6dea508c1d02faae0ad6272a0968537849f49c8270adc3a0dd15bd9441667c8fcf85bb4",
+      "signature_file": "pool/sentinel-sentinel-strace-6.8.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-subfinder-2.6.5",
+      "filename": "pool/sentinel-sentinel-subfinder-2.6.5.spk",
+      "size_bytes": 1010,
+      "sha256": "2bc0203f6e99b9db86ca38b6ba0a35c2ae3844d8a0ceb0f9ac1683a41ee2bfbc",
+      "sha512": "8a1b44bbe63cadd0c59e47884f1bd088f7edd0af8b387f47e6193247bf18092307e463aa47d0b0eace82d4951b9a2598463bf4d0ff77804ec5999eb78c36a182",
+      "signature_file": "pool/sentinel-sentinel-subfinder-2.6.5.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-suricata-7.0.3",
+      "filename": "pool/sentinel-sentinel-suricata-7.0.3.spk",
+      "size_bytes": 1144,
+      "sha256": "2859002843f4107c67223951cb6e1f50657e5edbefc51bb71b33839168861a06",
+      "sha512": "3ff95915af6bd618f73c758c6403780bd69cb3d93e6282c5d1306af4bc7f09826f7ff24c9e37494dc6ef7c21a98049928aaf358f33faa5127a16abdc8db71d94",
+      "signature_file": "pool/sentinel-sentinel-suricata-7.0.3.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-syft-1.0.1",
+      "filename": "pool/sentinel-sentinel-syft-1.0.1.spk",
+      "size_bytes": 1048,
+      "sha256": "d6ab5a7869c5d174b879150b6966ce9a49a4b8287d5a4de127fbe21704fee3b4",
+      "sha512": "e94b1ca6fb62bfa28edbfa7d72834ea346eb57cb4128c505ff22c15a50f67bde149439f2764a54daacdf933b1f25346b8661cb7b73588af5ecf7ca380a2b4fc9",
+      "signature_file": "pool/sentinel-sentinel-syft-1.0.1.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-tcpdump-4.99.4",
+      "filename": "pool/sentinel-sentinel-tcpdump-4.99.4.spk",
+      "size_bytes": 1115,
+      "sha256": "af7d995f5fe0091c5577c12894a7e57fbe5543b9ec3bd7285735a1e253cde8bf",
+      "sha512": "464311700de61ec523172c3e15a95a7eb9d0569f8f7628c6608085f443387d4ebcd9fb620eb293a47bfebf0f0db93f8ec58a06f27a1054f2040cd276542daa59",
+      "signature_file": "pool/sentinel-sentinel-tcpdump-4.99.4.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-testdisk-7.2",
+      "filename": "pool/sentinel-sentinel-testdisk-7.2.spk",
+      "size_bytes": 1063,
+      "sha256": "1fca184fa5f9973c8d0f019b925fe61972acfe96d5c696cd8d322e0fea063819",
+      "sha512": "4c625c5519fb67514715cfba2d37ea6e25bb6b573ecdb97df13f10dd074361b9b1212d0227cd0f954289f0c892742be8831fa2471cca4c90791d37792da87321",
+      "signature_file": "pool/sentinel-sentinel-testdisk-7.2.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-testssl-3.0.8",
+      "filename": "pool/sentinel-sentinel-testssl-3.0.8.spk",
+      "size_bytes": 1042,
+      "sha256": "887b28c049393a165690dfb5994157f7e95ac042d88844f080dc0c8ba53511d4",
+      "sha512": "c2a6bad35042baa57c35b47d683374e210ae8fc99958f4216195bc72184b4eda9493928ddeca5f133d3392aa281a459404b3f950f5c4868d822e35eea549b675",
+      "signature_file": "pool/sentinel-sentinel-testssl-3.0.8.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-theharvester-4.6.0",
+      "filename": "pool/sentinel-sentinel-theharvester-4.6.0.spk",
+      "size_bytes": 1043,
+      "sha256": "2d62d05e1ab356f4020e71d0fa5c4c1ce58d17542d9e1cce1271d8a85f497d07",
+      "sha512": "5ba668703bd03ca7c78bbdbf65a8fbbc8ac3735d18dfb675a705e18a95a974f4a0f862a85bb5bb122afa6d661853c02b9faa20129bf690cad46017c5f2cb7769",
+      "signature_file": "pool/sentinel-sentinel-theharvester-4.6.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-trivy-0.50.0",
+      "filename": "pool/sentinel-sentinel-trivy-0.50.0.spk",
+      "size_bytes": 1084,
+      "sha256": "47e47b38ee16959234460e035e14399974050bb5d780a8abb584384cccd2567c",
+      "sha512": "83972b21a4e7e21ebda803ec1fa37ac273563f81a66ef0f7975b254ded9a95d128efc4047626ceb9bcdb97602285f7575f99bf85c6c2655b15773ecb78df2954",
+      "signature_file": "pool/sentinel-sentinel-trivy-0.50.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-tshark-4.2.0",
+      "filename": "pool/sentinel-sentinel-tshark-4.2.0.spk",
+      "size_bytes": 1090,
+      "sha256": "3d362b6d85da0b9b0794b7601fe2199814aae45da1eec9e418664ac696202acf",
+      "sha512": "290fcdf8b5f014e08462dd947332da2400577432b8dbced95ffe6cc3ae2c3882c7f4bf9cd326b65171605ecf42f42e9de993ccbae3719610dfab79cd1e8d7d62",
+      "signature_file": "pool/sentinel-sentinel-tshark-4.2.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-ubertooth-2020.12.1",
+      "filename": "pool/sentinel-sentinel-ubertooth-2020.12.1.spk",
+      "size_bytes": 1049,
+      "sha256": "2a370003d333f91716b8c96ea1d5c3c418bcd8e15a8ee6fb656b6cbab93fe248",
+      "sha512": "80c7353bba1a3a13074fd757d347b832f79e82eededb443e465ef46e289e2e51224c6402f361da820e578c4e3f1a403c0312fe4484a4208f584a065f50b0c1b2",
+      "signature_file": "pool/sentinel-sentinel-ubertooth-2020.12.1.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-unicornscan-0.4.7",
+      "filename": "pool/sentinel-sentinel-unicornscan-0.4.7.spk",
+      "size_bytes": 1091,
+      "sha256": "9acccae389c720def5f7079e54ce3e2fe5872c9c6a694c64103fc8300cd9279a",
+      "sha512": "39b2e1fac91f905d03306dbdaf9e86d046c08a9e4ad2e0bcac28ccd573a732482487aa1d591ef72e3d6a870ba79ba33e671366e02fb4761309d5be2788e790ab",
+      "signature_file": "pool/sentinel-sentinel-unicornscan-0.4.7.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-virtualbox-7.0.14",
+      "filename": "pool/sentinel-sentinel-virtualbox-7.0.14.spk",
+      "size_bytes": 1294,
+      "sha256": "f05a5cf4c35d2a93d133d006469a0cb513517e3a915830d111d67f1ef5524b99",
+      "sha512": "3cce51adfa8a9ade038ec3651e71b09c37db7dabc472f2769a01a8094f57bdf436c01a3aa371e27fd0c91d2143bf8760a99b2ee94611ecbadd31fd66664782b9",
+      "signature_file": "pool/sentinel-sentinel-virtualbox-7.0.14.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-volatility3-2.5.0",
+      "filename": "pool/sentinel-sentinel-volatility3-2.5.0.spk",
+      "size_bytes": 1095,
+      "sha256": "201fc76ef23af1d6d04aa8f68356c67da3d8e40e13d6bca58d2662470e5ebc6d",
+      "sha512": "40dc21d7b7f00b5e4a11886653c449dae0659a2acdc9cfcdcf9765d951372b0a7ed1f13d7001e308f49d1b35964dd17cbc09d51b19de71e9fb10974bf01cd403",
+      "signature_file": "pool/sentinel-sentinel-volatility3-2.5.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-whatweb-0.5.5",
+      "filename": "pool/sentinel-sentinel-whatweb-0.5.5.spk",
+      "size_bytes": 1046,
+      "sha256": "660f1a0b2ee8ca3bd3037ed78d0ebf2c164295f488edc06046e2c12a60529760",
+      "sha512": "f84331389e0e9c1c52f20c6f68cd7d2239b27febc3fbd11511258ebb75983934d5fe876f089bc867404145e9c8f6599fa7b54a0485f8e016a20bb86b76033dda",
+      "signature_file": "pool/sentinel-sentinel-whatweb-0.5.5.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-wifite-2.7.0",
+      "filename": "pool/sentinel-sentinel-wifite-2.7.0.spk",
+      "size_bytes": 1065,
+      "sha256": "9ce10c3e86bddd35a69aaeb3fe4a3d79a61f55e7a4c3c6f10666d39b374346c8",
+      "sha512": "aded0b46d93749114e32d73af7ce4aece46f431a231d51e32a96837b1b581e40be5c102dcc197c10da196661de91a779640253a7ee8f40c220026c0e485fd09c",
+      "signature_file": "pool/sentinel-sentinel-wifite-2.7.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-wpscan-3.8.25",
+      "filename": "pool/sentinel-sentinel-wpscan-3.8.25.spk",
+      "size_bytes": 1036,
+      "sha256": "0b9f0c98831b79d5bde7686b86bf8673bed1da348602c00014ebf843d7bc90b6",
+      "sha512": "bf6302fe7c41399772aef0ab940d22c8b38814183d1b9f7e9c2602562f08f6001069c0ddc1592bacf2388fdaad9aa36de28db8820a8bda53ad5481328814ed09",
+      "signature_file": "pool/sentinel-sentinel-wpscan-3.8.25.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-yara-4.5.0",
+      "filename": "pool/sentinel-sentinel-yara-4.5.0.spk",
+      "size_bytes": 1115,
+      "sha256": "7fc6bd6f52db94889628c882fb593d9ce47466261acffb8eafa190373e9327d3",
+      "sha512": "228beab1deca2018e53d3457be27192bdc227e89764e5a069890e4d71d2fa3a54fa87a0d02ba4b526319c12ff22be787c3c8e30c407eed50012bb24b40a87352",
+      "signature_file": "pool/sentinel-sentinel-yara-4.5.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-yara-x-0.4.0",
+      "filename": "pool/sentinel-sentinel-yara-x-0.4.0.spk",
+      "size_bytes": 1058,
+      "sha256": "c30d39ff417c663aa66579a8c948fbd911953c397c96ab57c584f76e85b29f87",
+      "sha512": "86abddad94baad9a5c58d427b75e87d518ca5f0690f50a3aac69685ed47b0e15fe81705954a2d693f1eb95374026df2e926970e510de138016e44602378911b6",
+      "signature_file": "pool/sentinel-sentinel-yara-x-0.4.0.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    },
+    {
+      "package": "sentinel-sentinel-zeek-6.0.3",
+      "filename": "pool/sentinel-sentinel-zeek-6.0.3.spk",
+      "size_bytes": 1101,
+      "sha256": "d2013de0ff2b541959246aac7936b7de2282716cebea3e18ca1ba15a9ed85aa7",
+      "sha512": "073731c4cd0064bcd8c2ec817d2de1adda8b9261232aea716bd09d39275a4541fd0a96f60d109f5ced6a95df13bfd10b54aaa567fa0972d763a5e0f379bab142",
+      "signature_file": "pool/sentinel-sentinel-zeek-6.0.3.spk.sig",
+      "verification_status": "ED25519_VERIFIED"
+    }
+  ]
+}

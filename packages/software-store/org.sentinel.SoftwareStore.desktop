@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Sentinel Software Store
+GenericName=Software Center
+Comment=Secure, memory-safe package vault for Sentinel SPK, Sentinel Flatpak, and Flathub repositories
+Exec=sentinel-software-store %u
+Icon=org.sentinel.SoftwareStore
+Terminal=false
+Type=Application
+Categories=System;PackageManager;Settings;Security;
+Keywords=software;store;package;install;flatpak;spk;flathub;sentinel;
+MimeType=x-scheme-handler/appstream;x-scheme-handler/sentinel-store;
+StartupNotify=true
+StartupWMClass=sentinel-software-store
+X-Sentinel-Hardened=true

@@ -1,0 +1,33 @@
+app-id: org.sentinel.Photos
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.rust-stable
+command: sentinel-photos
+
+finish-args:
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --filesystem=xdg-pictures
+  - --filesystem=xdg-run/dconf
+  - --filesystem=~/.local/share/sentinel/photos:create
+  - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.freedesktop.portal.FileChooser
+  - --system-talk-name=org.freedesktop.Accounts
+
+modules:
+  - name: sentinel-photos
+    buildsystem: simple
+    build-commands:
+      - cargo build --release --verbose
+      - install -Dm755 target/release/sentinel-photos /app/bin/sentinel-photos
+      - install -Dm644 packaging/org.sentinel.Photos.desktop /app/share/applications/org.sentinel.Photos.desktop
+      - install -Dm644 packaging/org.sentinel.Photos.metainfo.xml /app/share/metainfo/org.sentinel.Photos.metainfo.xml
+      - install -Dm644 assets/org.sentinel.Photos.svg /app/share/icons/hicolor/scalable/apps/org.sentinel.Photos.svg
+      - install -Dm644 assets/org.sentinel.Photos.png /app/share/icons/hicolor/512x512/apps/org.sentinel.Photos.png
+    sources:
+      - type: dir
+        path: ../../

@@ -1,0 +1,20 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-photos": {
+      "archive": "sentinel-photos-1.0.0-x86_64.spk",
+      "version": "1.0.0",
+      "type": "application",
+      "description": "Official Sentinel Photos for Sentinel Linux (Native Rust + Slint encrypted photo and video library with zero-telemetry local storage, SHA-256 deduplication, AES-256-GCM .sphoto backup containers, non-destructive editing recipes, and Core OS user profile synchronization)",
+      "security_realm": "MediaRealm",
+      "app_id": "org.sentinel.Photos",
+      "dependencies": [
+        "Sentinel-Media-Framework"
+      ],
+      "sha256": "1171651660739be64b00955fc49b92f937cdd9a416a3129325689616721a30c3",
+      "size_bytes": 13332956
+    }
+  }
+}

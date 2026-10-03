@@ -1,0 +1,28 @@
+app-id: org.sentinel.ControlCenter
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: sentinel-control-center
+finish-args:
+  # System Control Surface: Wayland, IPC, PipeWire, BlueZ, NetworkManager, Security Broker
+  - --share=ipc
+  - --share=network
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.freedesktop.NetworkManager
+  - --talk-name=org.bluez
+  - --talk-name=org.freedesktop.locale1
+  - --talk-name=com.sentinel.SecurityCore1
+  - --talk-name=com.sentinel.SecurityBroker1
+  - --system-talk-name=org.freedesktop.NetworkManager
+  - --system-talk-name=org.bluez
+modules:
+  - name: sentinel-control-center
+    buildsystem: simple
+    build-commands:
+      - install -D -m755 sentinel-control-center /app/bin/sentinel-control-center
+    sources:
+      - type: file
+        path: bin/sentinel-control-center

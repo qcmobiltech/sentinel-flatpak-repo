@@ -1,0 +1,16 @@
+{
+  "sentinel_version": "2027.0.1",
+  "generated_at": "2026-10-03T18:50:00.000000Z",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-control-center": {
+      "archive": "sentinel-control-center-2027.0.1-x86_64.spk",
+      "version": "2027.0.1",
+      "type": "system-surface",
+      "description": "Authoritative native Rust / Slint Central System Management Surface for Sentinel Linux OS with multi-monitor arrangement, PipeWire sound equalizer, NetworkManager static/DHCP, BlueZ bluetooth, font installation, and window tiling management.",
+      "dependencies": [],
+      "sha256": "b0d6157420b226c5d1e3e4312b21bb86ae14ef6340ac5c62c48b855f40acbc62",
+      "size_bytes": 9818958
+    }
+  }
+}

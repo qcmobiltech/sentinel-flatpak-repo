@@ -8,13 +8,20 @@ finish-args:
   - --share=ipc
   - --socket=fallback-x11
   - --socket=wayland
+  - --device=dri
+  - --filesystem=xdg-documents
+  - --filesystem=xdg-download
   - --talk-name=org.freedesktop.portal.Documents
+  - --talk-name=org.freedesktop.portal.FileChooser
   - --talk-name=com.sentinel.SecurityCore1
+
 modules:
   - name: sentinel-office
     buildsystem: simple
     build-commands:
-      - install -D -m755 sentinel-office /app/bin/sentinel-office
+      - tar -zxvf sentinel-office-1.0.0-x86_64.spk
+      - install -D -m755 usr/bin/sentinel-office /app/bin/sentinel-office
+      - cp -r usr/share/* /app/share/
     sources:
       - type: file
-        path: bin/sentinel-office
+        path: ../packages/office/sentinel-office-1.0.0-x86_64.spk

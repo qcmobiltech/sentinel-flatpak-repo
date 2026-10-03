@@ -1,0 +1,21 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-office": {
+      "archive": "sentinel-office-1.0.0-x86_64.spk",
+      "version": "1.0.0",
+      "type": "application",
+      "description": "Official Sentinel Office Suite for Sentinel Linux (Native Rust + Slint verified productivity suite featuring Writer, Sheets, Present, PDF, Publisher, Vector, and Studio with zero dummy data, dynamic system font discovery, and Sentinel Engineer OS auto-unlock)",
+      "security_realm": "OfficeRealm",
+      "app_id": "org.sentinel.Office",
+      "dependencies": [
+        "sentinel-platform-base",
+        "fontconfig"
+      ],
+      "sha256": "85fb607326c2589ce7fe1ca18373d2c0bb572df5bc38b7f7fbf609997e5dbdd8",
+      "size_bytes": 8999407
+    }
+  }
+}

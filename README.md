@@ -42,6 +42,7 @@ flatpak install sentinel org.sentinel.Contacts
 flatpak install sentinel org.sentinel.PartitionManager
 flatpak install sentinel org.sentinel.Photos
 flatpak install sentinel org.sentinel.DockEnhancements
+flatpak install sentinel org.sentinel.DesktopWidgets
 ```
 
 ---

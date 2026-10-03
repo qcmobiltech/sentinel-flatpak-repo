@@ -1,0 +1,22 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-desktop-widgets": {
+      "archive": "sentinel-desktop-widgets-1.0.0-x86_64.spk",
+      "version": "1.0.0",
+      "type": "system",
+      "description": "Official Native Desktop & Dock Widgets Extension Layer for Sentinel Linux",
+      "security_realm": "UserRealm",
+      "app_id": "org.sentinel.DesktopWidgets",
+      "dependencies": [
+        "libwayland-client",
+        "mesa-libgbm",
+        "mesa-dri-drivers"
+      ],
+      "sha256": "f261d1b711bf5b787d02b6d5368dfe6a52bc4579b5701c9b0b462891c13a61b6",
+      "size_bytes": 8523351
+    }
+  }
+}

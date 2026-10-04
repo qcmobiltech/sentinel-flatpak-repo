@@ -1,0 +1,26 @@
+[Desktop Entry]
+Name=Sentinel Vault
+GenericName=Authoritative Password & Credential Manager
+Comment=Native KeePassXC-compatible secure vault with FIDO2 and TOTP support
+Exec=/usr/local/bin/sentinel-vault %u
+Icon=sentinel-vault
+Terminal=false
+Type=Application
+Categories=Utility;Security;System;
+Keywords=password;keepass;kdbx;fido2;totp;credentials;yubikey;sentinel;
+MimeType=application/x-keepass2;
+StartupNotify=true
+StartupWMClass=sentinel-vault
+Actions=Lock;NewEntry;GeneratePassword;
+
+[Desktop Action Lock]
+Name=Lock All Vaults
+Exec=/usr/local/bin/sentinel-vault --lock
+
+[Desktop Action NewEntry]
+Name=Add New Credential
+Exec=/usr/local/bin/sentinel-vault --add-entry
+
+[Desktop Action GeneratePassword]
+Name=Open Password Generator
+Exec=/usr/local/bin/sentinel-vault --generator

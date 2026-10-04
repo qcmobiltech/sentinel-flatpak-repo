@@ -1,0 +1,386 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="100%" height="100%" style="background:#070b10; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, sans-serif;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1017"/>
+      <stop offset="100%" stop-color="#070a0f"/>
+    </linearGradient>
+
+    <linearGradient id="orangeAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9438"/>
+      <stop offset="100%" stop-color="#f38020"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141c27"/>
+      <stop offset="100%" stop-color="#0f1620"/>
+    </linearGradient>
+
+    <linearGradient id="activeItemGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1f2d40"/>
+      <stop offset="100%" stop-color="#162232"/>
+    </linearGradient>
+
+    <linearGradient id="totpGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f38020"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="dropGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#f38020" flood-opacity="0.3"/>
+    </filter>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Main Application Window Container -->
+  <rect x="20" y="20" width="1400" height="860" rx="14" fill="url(#bgGrad)" stroke="#223043" stroke-width="1.5" filter="url(#softShadow)"/>
+
+  <!-- ==================== HEADER BAR ==================== -->
+  <rect x="20" y="20" width="1400" height="64" rx="14" fill="#0f1622" stroke="#223043" stroke-width="1"/>
+  <!-- Prevent bottom border radius clipping inside container -->
+  <rect x="20" y="70" width="1400" height="14" fill="#0f1622"/>
+  <line x1="20" y1="84" x2="1420" y2="84" stroke="#223043" stroke-width="1"/>
+
+  <!-- Window Controls -->
+  <circle cx="50" cy="52" r="6" fill="#ef4444" opacity="0.8"/>
+  <circle cx="70" cy="52" r="6" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="90" cy="52" r="6" fill="#10b981" opacity="0.8"/>
+
+  <!-- Brand Emblem -->
+  <g transform="translate(130, 36)">
+    <rect x="0" y="0" width="34" height="34" rx="8" fill="url(#orangeAccent)" filter="url(#dropGlow)"/>
+    <path d="M17 7 L26 11 L26 18 C26 23.5 22 27 17 29 C12 27 8 23.5 8 18 L8 11 Z" fill="#0b1017"/>
+    <path d="M17 12 L22 14.5 L22 18 C22 21 19.5 23 17 24.5 C14.5 23 12 21 12 18 L12 14.5 Z" fill="#ffffff"/>
+    <text x="44" y="24" fill="#ffffff" font-size="16" font-weight="800" letter-spacing="1">SENTINEL VAULT</text>
+    <rect x="195" y="6" width="56" height="20" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="223" y="20" fill="#94a3b8" font-size="10" font-weight="700" text-anchor="middle">v2027.1</text>
+  </g>
+
+  <!-- Hardware FIDO2 Status Pill -->
+  <g transform="translate(480, 38)">
+    <rect x="0" y="0" width="280" height="30" rx="15" fill="#064e3b" fill-opacity="0.3" stroke="#059669" stroke-width="1"/>
+    <circle cx="16" cy="15" r="4" fill="#10b981"/>
+    <text x="28" y="19" fill="#34d399" font-size="12" font-weight="600">🔑 YubiKey 5 NFC — Bound &amp; Active</text>
+  </g>
+
+  <!-- Search Input Bar -->
+  <g transform="translate(780, 36)">
+    <rect x="0" y="0" width="340" height="34" rx="6" fill="#162232" stroke="#28394e" stroke-width="1"/>
+    <text x="14" y="22" fill="#64748b" font-size="14">🔍</text>
+    <text x="38" y="22" fill="#94a3b8" font-size="13">Search credentials, tags, domains (Ctrl+F)...</text>
+  </g>
+
+  <!-- Header Action Buttons -->
+  <g transform="translate(1040, 36)">
+    <!-- 📥 Import -->
+    <rect x="0" y="0" width="90" height="34" rx="6" fill="#182332" stroke="#28394e" stroke-width="1"/>
+    <text x="45" y="22" fill="#cbd5e1" font-size="13" font-weight="600" text-anchor="middle">📥 Import</text>
+
+    <!-- + New Entry -->
+    <rect x="100" y="0" width="130" height="34" rx="6" fill="url(#orangeAccent)"/>
+    <text x="165" y="22" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">+ New Entry</text>
+
+    <!-- Lock Vault -->
+    <rect x="242" y="0" width="120" height="34" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="302" y="22" fill="#f87171" font-size="13" font-weight="600" text-anchor="middle">🔒 Lock Vault</text>
+  </g>
+
+  <!-- ==================== SIDEBAR (LEFT) ==================== -->
+  <rect x="20" y="84" width="240" height="796" fill="#0c121b"/>
+  <line x1="260" y1="84" x2="260" y2="880" stroke="#1f2c3e" stroke-width="1"/>
+
+  <g transform="translate(36, 106)">
+    <!-- Vault Section -->
+    <text x="12" y="14" fill="#64748b" font-size="11" font-weight="800" letter-spacing="1">VAULT STORAGE</text>
+
+    <!-- Nav Items -->
+    <!-- All Items (Active) -->
+    <g transform="translate(0, 26)">
+      <rect x="0" y="0" width="208" height="38" rx="6" fill="url(#orangeAccent)"/>
+      <text x="16" y="24" fill="#ffffff" font-size="14">📑</text>
+      <text x="42" y="24" fill="#ffffff" font-size="13" font-weight="700">All Items</text>
+      <rect x="170" y="9" width="26" height="20" rx="10" fill="#0b1017" fill-opacity="0.3"/>
+      <text x="183" y="23" fill="#ffffff" font-size="11" font-weight="700" text-anchor="middle">42</text>
+    </g>
+
+    <!-- Logins -->
+    <g transform="translate(0, 70)">
+      <rect x="0" y="0" width="208" height="36" rx="6" fill="transparent"/>
+      <text x="16" y="23" fill="#94a3b8" font-size="14">🔐</text>
+      <text x="42" y="23" fill="#cbd5e1" font-size="13" font-weight="500">Logins</text>
+      <rect x="170" y="8" width="26" height="20" rx="10" fill="#1e293b"/>
+      <text x="183" y="22" fill="#94a3b8" font-size="11" font-weight="600" text-anchor="middle">28</text>
+    </g>
+
+    <!-- Secure Notes -->
+    <g transform="translate(0, 112)">
+      <rect x="0" y="0" width="208" height="36" rx="6" fill="transparent"/>
+      <text x="16" y="23" fill="#94a3b8" font-size="14">📝</text>
+      <text x="42" y="23" fill="#cbd5e1" font-size="13" font-weight="500">Secure Notes</text>
+      <rect x="170" y="8" width="26" height="20" rx="10" fill="#1e293b"/>
+      <text x="183" y="22" fill="#94a3b8" font-size="11" font-weight="600" text-anchor="middle">8</text>
+    </g>
+
+    <!-- FIDO2 Hardware Tokens -->
+    <g transform="translate(0, 154)">
+      <rect x="0" y="0" width="208" height="36" rx="6" fill="transparent"/>
+      <text x="16" y="23" fill="#94a3b8" font-size="14">🔑</text>
+      <text x="42" y="23" fill="#cbd5e1" font-size="13" font-weight="500">Security Keys</text>
+      <rect x="170" y="8" width="26" height="20" rx="10" fill="#1e293b"/>
+      <text x="183" y="22" fill="#94a3b8" font-size="11" font-weight="600" text-anchor="middle">4</text>
+    </g>
+
+    <!-- Server SSH Keys -->
+    <g transform="translate(0, 196)">
+      <rect x="0" y="0" width="208" height="36" rx="6" fill="transparent"/>
+      <text x="16" y="23" fill="#94a3b8" font-size="14">⚡</text>
+      <text x="42" y="23" fill="#cbd5e1" font-size="13" font-weight="500">SSH &amp; WireGuard</text>
+      <rect x="170" y="8" width="26" height="20" rx="10" fill="#1e293b"/>
+      <text x="183" y="22" fill="#94a3b8" font-size="11" font-weight="600" text-anchor="middle">2</text>
+    </g>
+
+    <!-- Divider -->
+    <line x1="12" y1="250" x2="196" y2="250" stroke="#1f2c3e" stroke-width="1"/>
+
+    <!-- System Tools Section -->
+    <text x="12" y="274" fill="#64748b" font-size="11" font-weight="800" letter-spacing="1">SECURITY TOOLS</text>
+
+    <!-- Password Generator -->
+    <g transform="translate(0, 286)">
+      <rect x="0" y="0" width="208" height="36" rx="6" fill="transparent"/>
+      <text x="16" y="23" fill="#94a3b8" font-size="14">🎲</text>
+      <text x="42" y="23" fill="#cbd5e1" font-size="13" font-weight="500">Password Gen</text>
+    </g>
+
+    <!-- Secret Service D-Bus Broker -->
+    <g transform="translate(0, 328)">
+      <rect x="0" y="0" width="208" height="36" rx="6" fill="transparent"/>
+      <text x="16" y="23" fill="#94a3b8" font-size="14">🌐</text>
+      <text x="42" y="23" fill="#cbd5e1" font-size="13" font-weight="500">Secret Service API</text>
+    </g>
+
+    <!-- Audit & Health -->
+    <g transform="translate(0, 370)">
+      <rect x="0" y="0" width="208" height="36" rx="6" fill="transparent"/>
+      <text x="16" y="23" fill="#94a3b8" font-size="14">🛡️</text>
+      <text x="42" y="23" fill="#cbd5e1" font-size="13" font-weight="500">Vault Security Audit</text>
+    </g>
+
+    <!-- Storage Status Card at Bottom -->
+    <g transform="translate(0, 630)">
+      <rect x="0" y="0" width="208" height="96" rx="8" fill="#141c28" stroke="#223043" stroke-width="1"/>
+      <text x="14" y="24" fill="#94a3b8" font-size="11" font-weight="600">Database Engine:</text>
+      <text x="14" y="42" fill="#f38020" font-size="12" font-weight="700">KeePass KDBX 4.0</text>
+      <text x="14" y="62" fill="#64748b" font-size="10">Cipher: AES-256-GCM</text>
+      <text x="14" y="78" fill="#64748b" font-size="10">KDF: Argon2id (64 MiB)</text>
+      <circle cx="190" cy="22" r="4" fill="#10b981"/>
+    </g>
+  </g>
+
+  <!-- ==================== ENTRY LIST (MIDDLE PANE) ==================== -->
+  <rect x="260" y="84" width="380" height="796" fill="#0e141d"/>
+  <line x1="640" y1="84" x2="640" y2="880" stroke="#1f2c3e" stroke-width="1"/>
+
+  <g transform="translate(280, 104)">
+    <!-- Subheader Filter & Sort -->
+    <text x="0" y="16" fill="#ffffff" font-size="16" font-weight="700">All Items (42)</text>
+    <rect x="270" y="0" width="70" height="26" rx="4" fill="#182332" stroke="#28394e" stroke-width="1"/>
+    <text x="305" y="17" fill="#94a3b8" font-size="11" font-weight="600" text-anchor="middle">Sort ▾</text>
+
+    <!-- Entry Card 1 (Selected) -->
+    <g transform="translate(0, 36)">
+      <rect x="0" y="0" width="340" height="84" rx="8" fill="url(#activeItemGrad)" stroke="#f38020" stroke-width="1.5" filter="url(#dropGlow)"/>
+      <rect x="14" y="18" width="46" height="46" rx="8" fill="#1a2638" stroke="#334460" stroke-width="1"/>
+      <text x="37" y="48" fill="#f38020" font-size="22" text-anchor="middle">🛡</text>
+
+      <text x="72" y="34" fill="#ffffff" font-size="14" font-weight="700">Sentinel Core Root</text>
+      <text x="72" y="52" fill="#94a3b8" font-size="12">root@sentinel-workstation</text>
+      <text x="72" y="68" fill="#38bdf8" font-size="11">auth.sentinel.internal</text>
+
+      <!-- TOTP Badge -->
+      <rect x="268" y="16" width="58" height="20" rx="4" fill="#f38020" fill-opacity="0.2" stroke="#f38020" stroke-width="1"/>
+      <text x="297" y="30" fill="#f38020" font-size="10" font-weight="800" text-anchor="middle">TOTP</text>
+
+      <!-- FIDO2 Bound Pill -->
+      <rect x="254" y="48" width="72" height="18" rx="4" fill="#064e3b" stroke="#059669" stroke-width="0.8"/>
+      <text x="290" y="61" fill="#34d399" font-size="9" font-weight="700" text-anchor="middle">FIDO2 PRF</text>
+    </g>
+
+    <!-- Entry Card 2 -->
+    <g transform="translate(0, 130)">
+      <rect x="0" y="0" width="340" height="80" rx="8" fill="#121a24" stroke="#223043" stroke-width="1"/>
+      <rect x="14" y="16" width="46" height="46" rx="8" fill="#182332"/>
+      <text x="37" y="46" fill="#ffffff" font-size="20" text-anchor="middle">🐙</text>
+
+      <text x="72" y="32" fill="#ffffff" font-size="14" font-weight="600">GitHub Sentinel SecOps</text>
+      <text x="72" y="50" fill="#94a3b8" font-size="12">secops-automation-bot</text>
+      <text x="72" y="66" fill="#64748b" font-size="11">github.com</text>
+
+      <rect x="268" y="16" width="58" height="20" rx="4" fill="#f38020" fill-opacity="0.2" stroke="#f38020" stroke-width="1"/>
+      <text x="297" y="30" fill="#f38020" font-size="10" font-weight="800" text-anchor="middle">TOTP</text>
+    </g>
+
+    <!-- Entry Card 3 -->
+    <g transform="translate(0, 220)">
+      <rect x="0" y="0" width="340" height="80" rx="8" fill="#121a24" stroke="#223043" stroke-width="1"/>
+      <rect x="14" y="16" width="46" height="46" rx="8" fill="#182332"/>
+      <text x="37" y="46" fill="#38bdf8" font-size="20" text-anchor="middle">⚡</text>
+
+      <text x="72" y="32" fill="#ffffff" font-size="14" font-weight="600">WireGuard Secure Mesh</text>
+      <text x="72" y="50" fill="#94a3b8" font-size="12">node-gw-01</text>
+      <text x="72" y="66" fill="#64748b" font-size="11">mesh.sentinel.network</text>
+
+      <rect x="274" y="16" width="52" height="20" rx="4" fill="#1e293b"/>
+      <text x="300" y="30" fill="#94a3b8" font-size="10" font-weight="600" text-anchor="middle">KEY</text>
+    </g>
+
+    <!-- Entry Card 4 -->
+    <g transform="translate(0, 310)">
+      <rect x="0" y="0" width="340" height="80" rx="8" fill="#121a24" stroke="#223043" stroke-width="1"/>
+      <rect x="14" y="16" width="46" height="46" rx="8" fill="#182332"/>
+      <text x="37" y="46" fill="#f59e0b" font-size="20" text-anchor="middle">☁️</text>
+
+      <text x="72" y="32" fill="#ffffff" font-size="14" font-weight="600">Proxmox Cluster VE</text>
+      <text x="72" y="50" fill="#94a3b8" font-size="12">root@pam</text>
+      <text x="72" y="66" fill="#64748b" font-size="11">10.100.0.10:8006</text>
+
+      <rect x="268" y="16" width="58" height="20" rx="4" fill="#f38020" fill-opacity="0.2" stroke="#f38020" stroke-width="1"/>
+      <text x="297" y="30" fill="#f38020" font-size="10" font-weight="800" text-anchor="middle">TOTP</text>
+    </g>
+
+    <!-- Entry Card 5 -->
+    <g transform="translate(0, 400)">
+      <rect x="0" y="0" width="340" height="80" rx="8" fill="#121a24" stroke="#223043" stroke-width="1"/>
+      <rect x="14" y="16" width="46" height="46" rx="8" fill="#182332"/>
+      <text x="37" y="46" fill="#10b981" font-size="20" text-anchor="middle">💳</text>
+
+      <text x="72" y="32" fill="#ffffff" font-size="14" font-weight="600">Hardware YubiHSM Key</text>
+      <text x="72" y="50" fill="#94a3b8" font-size="12">operator-hsm</text>
+      <text x="72" y="66" fill="#64748b" font-size="11">Hardware Token</text>
+    </g>
+  </g>
+
+  <!-- ==================== ENTRY DETAILS (RIGHT INSPECTOR PANE) ==================== -->
+  <rect x="640" y="84" width="780" height="796" fill="#0b1017"/>
+
+  <g transform="translate(680, 110)">
+    <!-- Inspector Top Header -->
+    <g>
+      <rect x="0" y="0" width="56" height="56" rx="10" fill="#182332" stroke="#f38020" stroke-width="1.5" filter="url(#dropGlow)"/>
+      <text x="28" y="38" fill="#f38020" font-size="30" text-anchor="middle">🛡</text>
+
+      <text x="76" y="26" fill="#ffffff" font-size="22" font-weight="800">Sentinel Core Root</text>
+      <text x="76" y="48" fill="#38bdf8" font-size="13">https://auth.sentinel.internal</text>
+
+      <!-- Action Buttons Top Right -->
+      <g transform="translate(420, 10)">
+        <rect x="0" y="0" width="110" height="36" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+        <text x="55" y="23" fill="#ffffff" font-size="12" font-weight="600" text-anchor="middle">🌐 Open &amp; Fill</text>
+
+        <rect x="120" y="0" width="80" height="36" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+        <text x="160" y="23" fill="#ffffff" font-size="12" font-weight="600" text-anchor="middle">✏️ Edit</text>
+
+        <rect x="210" y="0" width="80" height="36" rx="6" fill="#991b1b" fill-opacity="0.3" stroke="#ef4444" stroke-width="1"/>
+        <text x="250" y="23" fill="#f87171" font-size="12" font-weight="600" text-anchor="middle">🗑 Delete</text>
+      </g>
+    </g>
+
+    <!-- Divider -->
+    <line x1="0" y1="76" x2="710" y2="76" stroke="#1f2c3e" stroke-width="1"/>
+
+    <!-- Field: USERNAME -->
+    <g transform="translate(0, 96)">
+      <text x="0" y="0" fill="#64748b" font-size="11" font-weight="800" letter-spacing="0.5">USERNAME / IDENTITY</text>
+      <rect x="0" y="10" width="710" height="46" rx="6" fill="#111822" stroke="#223043" stroke-width="1"/>
+      <text x="16" y="38" fill="#f8fafc" font-size="14" font-weight="500">root@sentinel-workstation</text>
+      <rect x="630" y="17" width="68" height="32" rx="4" fill="#182332" stroke="#28394e" stroke-width="1"/>
+      <text x="664" y="38" fill="#cbd5e1" font-size="12" font-weight="600" text-anchor="middle">📋 Copy</text>
+    </g>
+
+    <!-- Field: PASSWORD -->
+    <g transform="translate(0, 172)">
+      <text x="0" y="0" fill="#64748b" font-size="11" font-weight="800" letter-spacing="0.5">PASSWORD (ZEROIZE BUFFER)</text>
+      <rect x="0" y="10" width="710" height="46" rx="6" fill="#111822" stroke="#223043" stroke-width="1"/>
+      <text x="16" y="40" fill="#f8fafc" font-size="16" font-family="monospace">••••••••••••••••••••••••</text>
+
+      <!-- Password Strength Indicator Inside Box -->
+      <g transform="translate(430, 24)">
+        <rect x="0" y="0" width="18" height="6" rx="2" fill="#10b981"/>
+        <rect x="22" y="0" width="18" height="6" rx="2" fill="#10b981"/>
+        <rect x="44" y="0" width="18" height="6" rx="2" fill="#10b981"/>
+        <rect x="66" y="0" width="18" height="6" rx="2" fill="#10b981"/>
+        <text x="94" y="8" fill="#10b981" font-size="10" font-weight="700">128-bit Entropy</text>
+      </g>
+
+      <!-- Eye Toggle -->
+      <rect x="580" y="17" width="38" height="32" rx="4" fill="#182332" stroke="#28394e" stroke-width="1"/>
+      <text x="599" y="38" fill="#94a3b8" font-size="14" text-anchor="middle">👁</text>
+
+      <!-- Copy -->
+      <rect x="630" y="17" width="68" height="32" rx="4" fill="#182332" stroke="#28394e" stroke-width="1"/>
+      <text x="664" y="38" fill="#cbd5e1" font-size="12" font-weight="600" text-anchor="middle">📋 Copy</text>
+    </g>
+
+    <!-- Field: TWO-FACTOR TOTP (RFC 6238) -->
+    <g transform="translate(0, 248)">
+      <text x="0" y="0" fill="#64748b" font-size="11" font-weight="800" letter-spacing="0.5">TWO-FACTOR AUTHENTICATION (RFC 6238 TOTP)</text>
+      <rect x="0" y="10" width="710" height="74" rx="8" fill="#141c28" stroke="#f38020" stroke-width="1.5" filter="url(#dropGlow)"/>
+
+      <!-- Live Code Display -->
+      <text x="24" y="56" fill="url(#totpGlow)" font-size="34" font-weight="900" font-family="monospace" letter-spacing="6">839 201</text>
+
+      <!-- Progress Countdown Ring / Bar -->
+      <g transform="translate(320, 28)">
+        <text x="0" y="16" fill="#94a3b8" font-size="12">Expires in <tspan fill="#f38020" font-weight="700">24s</tspan></text>
+        <rect x="0" y="24" width="160" height="6" rx="3" fill="#1e293b"/>
+        <rect x="0" y="24" width="128" height="6" rx="3" fill="url(#orangeAccent)"/>
+      </g>
+
+      <!-- Copy TOTP Button -->
+      <g transform="translate(560, 26)">
+        <rect x="0" y="0" width="130" height="42" rx="6" fill="url(#orangeAccent)"/>
+        <text x="65" y="26" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">⚡ Copy Token</text>
+      </g>
+    </g>
+
+    <!-- Field: HARDWARE FIDO2 BINDING -->
+    <g transform="translate(0, 344)">
+      <text x="0" y="0" fill="#64748b" font-size="11" font-weight="800" letter-spacing="0.5">HARDWARE SECURITY-KEY BINDING</text>
+      <rect x="0" y="10" width="710" height="54" rx="6" fill="#111822" stroke="#223043" stroke-width="1"/>
+      <circle cx="28" cy="37" r="6" fill="#10b981"/>
+      <text x="46" y="34" fill="#ffffff" font-size="13" font-weight="600">Hardware Bound (CTAP2 HMAC-Secret / PRF Extension)</text>
+      <text x="46" y="50" fill="#64748b" font-size="11">Device: Yubico YubiKey 5 Series (SN: SENTINEL-SEC-8829) • PIN Enforced</text>
+      <rect x="610" y="20" width="88" height="32" rx="4" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+      <text x="654" y="40" fill="#34d399" font-size="11" font-weight="700" text-anchor="middle">VERIFIED</text>
+    </g>
+
+    <!-- Field: SYSTEM INTEGRATION (FREE-DESKTOP SECRET SERVICE) -->
+    <g transform="translate(0, 422)">
+      <text x="0" y="0" fill="#64748b" font-size="11" font-weight="800" letter-spacing="0.5">DEFAULT SYSTEM INTEGRATION (D-BUS &amp; IPC)</text>
+      <rect x="0" y="10" width="710" height="60" rx="6" fill="#111822" stroke="#223043" stroke-width="1"/>
+      <text x="20" y="34" fill="#38bdf8" font-size="13" font-weight="600">FreeDesktop Secret Service: org.freedesktop.secrets</text>
+      <text x="20" y="52" fill="#94a3b8" font-size="11">Authoritative system broker • Allowed Apps: Chromium, Firefox, Git, VSCode, Thunderbird</text>
+      <rect x="620" y="24" width="78" height="28" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="659" y="42" fill="#38bdf8" font-size="11" font-weight="600" text-anchor="middle">Active Broker</text>
+    </g>
+
+    <!-- Field: NOTES -->
+    <g transform="translate(0, 506)">
+      <text x="0" y="0" fill="#64748b" font-size="11" font-weight="800" letter-spacing="0.5">SECURE ENCRYPTED NOTES</text>
+      <rect x="0" y="10" width="710" height="70" rx="6" fill="#111822" stroke="#223043" stroke-width="1"/>
+      <text x="18" y="32" fill="#cbd5e1" font-size="12">Workstation root credential locked with FIDO2 PRF hardware extension.</text>
+      <text x="18" y="50" fill="#94a3b8" font-size="11">Protected by Sentinel Zero-Trust Memory Barrier. Clipboard auto-purges after 30 seconds.</text>
+    </g>
+
+    <!-- Metadata Footer -->
+    <g transform="translate(0, 600)">
+      <text x="0" y="14" fill="#64748b" font-size="11">UUID: 8a4f910e-3b2d-4c5a-9f1e-08c3d9a101b4</text>
+      <text x="320" y="14" fill="#64748b" font-size="11">Created: 2026-10-03 17:30 UTC</text>
+      <text x="540" y="14" fill="#64748b" font-size="11">KDBX Revision: 14</text>
+    </g>
+  </g>
+</svg>

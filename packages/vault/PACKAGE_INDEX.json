@@ -1,0 +1,19 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-vault": {
+      "archive": "sentinel-vault-2027.1.0-x86_64.spk",
+      "flatpak_bundle": "org.sentinel.Vault.flatpak",
+      "version": "2027.1.0",
+      "type": "application",
+      "description": "Authoritative native KeePassXC-compatible password and credential manager with FIDO2, TOTP, and FreeDesktop Secret Service integration",
+      "security_realm": "CryptoRealm",
+      "app_id": "org.sentinel.Vault",
+      "dependencies": [
+        "Sentinel-Hardware-Framework"
+      ]
+    }
+  }
+}

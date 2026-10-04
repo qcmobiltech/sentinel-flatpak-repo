@@ -3,18 +3,34 @@ runtime: org.freedesktop.Platform
 runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 command: sentinel-vault
+
 finish-args:
-  # Crypto Realm Confinement: Zero raw network, talks directly to TPM 2.0 PKCS#11
-  - --share=ipc
-  - --socket=fallback-x11
+  # Display & Wayland
   - --socket=wayland
+  - --socket=fallback-x11
+  - --share=ipc
+
+  # Hardware Security Keys (FIDO2 / U2F / USB HID)
   - --device=all
-  - --talk-name=com.sentinel.SecurityCore1
+
+  # FreeDesktop Secret Service D-Bus Ownership
+  - --own-name=org.freedesktop.secrets
+  - --own-name=tech.sentinel.Vault
+  - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.freedesktop.portal.Fido
+
+  # Storage Isolation (KDBX databases remain strictly user data)
+  - --filesystem=~/.local/share/sentinel-vault:create
+  - --filesystem=xdg-documents:ro
+  - --filesystem=xdg-download:ro
+
 modules:
   - name: sentinel-vault
     buildsystem: simple
     build-commands:
-      - install -D -m755 sentinel-vault /app/bin/sentinel-vault
+      - install -Dm755 sentinel-vault /app/bin/sentinel-vault
+      - install -Dm644 org.sentinel.Vault.desktop /app/share/applications/org.sentinel.Vault.desktop
+      - install -Dm644 org.sentinel.Vault.svg /app/share/icons/hicolor/scalable/apps/org.sentinel.Vault.svg
     sources:
       - type: file
-        path: bin/sentinel-vault
+        path: packages/vault/sentinel-vault-2027.1.0-x86_64.spk

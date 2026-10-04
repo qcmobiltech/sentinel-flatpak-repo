@@ -9,9 +9,8 @@
 
 1. **Public & General Applications Only:**  
    This repository is open to the public and contains only general consumer, productivity, and standard workstation applications verified for Sentinel Linux.
-2. **Company-Exclusive Apps STRICTLY FORBIDDEN:**  
-   Internal, proprietary, and engineer-exclusive tooling (such as **ClientCore**, hardware diagnostic tools, internal telemetry agents, and staging utilities) are **STRICTLY PROHIBITED** from this repository. They are maintained and distributed exclusively through the private **`sentinel-engineer-flatpaks`** repository.
-
+2. **Open Security Arsenal & Productivity Applications:**  
+   The complete **Sentinel Security Toolkit** (99 tools across 16 operational domains including Nmap, Wireshark, Ghidra, ZAP, Cutter, Autopsy, Hashcat, Aircrack-ng, and the native **Sentinel Command Center**) is fully available through this public repository for **all cybersecurity professionals, penetration testers, SecOps engineers, and researchers**. Internal corporate staging shims remain segregated.
 ---
 
 ## 📦 Using This Repository
@@ -25,6 +24,12 @@ flatpak remote-add --if-not-exists sentinel https://qcmobiltech.github.io/sentin
 ```bash
 flatpak install sentinel org.sentinel.Files
 flatpak install sentinel org.sentinel.Terminal
+flatpak install sentinel org.sentinel.CommandCenter
+flatpak install sentinel org.wireshark.Wireshark
+flatpak install sentinel org.ghidra_sre.Ghidra
+flatpak install sentinel org.zaproxy.ZAP
+flatpak install sentinel re.rizin.cutter
+flatpak install sentinel org.sleuthkit.Autopsy
 flatpak install sentinel org.sentinel.Vault
 flatpak install sentinel org.sentinel.Office
 flatpak install sentinel org.sentinel.Calculator

@@ -1,0 +1,32 @@
+app-id: org.sleuthkit.autopsy
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: autopsy
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --socket=wayland
+  - --filesystem=host:ro
+  - --device=dri
+modules:
+  - name: bellsoft-java17
+    buildsystem: simple
+    build-commands:
+      - echo "Staging BellSoft Liberica OpenJDK 17 FX..."
+  - name: sleuthkit-lib
+    buildsystem: autotools
+    sources:
+      - type: git
+        url: https://github.com/sleuthkit/sleuthkit.git
+        tag: sleuthkit-4.12.1
+  - name: autopsy
+    buildsystem: simple
+    build-commands:
+      - mkdir -p /app/bin /app/share/autopsy
+      - cp -r * /app/share/autopsy/
+      - ln -s /app/share/autopsy/bin/autopsy /app/bin/autopsy
+    sources:
+      - type: archive
+        url: https://github.com/sleuthkit/autopsy/releases/download/autopsy-4.21.0/autopsy-4.21.0.zip
+        sha256: 4b5c6d7e8f9a0b1c2d3e4f5a6b7c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c

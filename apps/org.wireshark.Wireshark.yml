@@ -1,0 +1,31 @@
+app-id: org.wireshark.Wireshark
+runtime: org.kde.Platform
+runtime-version: '6.6'
+sdk: org.kde.Sdk
+command: wireshark
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --socket=wayland
+  - --share=network
+  - --device=all
+  - --filesystem=host:ro
+  - --system-talk-name=org.freedesktop.NetworkManager
+modules:
+  - name: libpcap
+    buildsystem: autotools
+    sources:
+      - type: git
+        url: https://github.com/the-tcpdump-group/libpcap.git
+        tag: libpcap-1.10.4
+  - name: wireshark
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DENABLE_APPLICATION=ON
+      - -DENABLE_QT5=OFF
+      - -DENABLE_QT6=ON
+      - -DBUILD_wireshark=ON
+    sources:
+      - type: git
+        url: https://gitlab.com/wireshark/wireshark.git
+        tag: v4.2.0

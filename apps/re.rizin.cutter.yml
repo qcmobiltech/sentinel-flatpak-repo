@@ -1,0 +1,30 @@
+app-id: re.rizin.cutter
+runtime: org.kde.Platform
+runtime-version: '6.6'
+sdk: org.kde.Sdk
+command: cutter
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --socket=wayland
+  - --device=dri
+  - --filesystem=host:ro
+modules:
+  - name: rizin
+    buildsystem: meson
+    config-opts:
+      - -Duse_sys_magic=enabled
+      - -Duse_sys_capstone=disabled
+    sources:
+      - type: git
+        url: https://github.com/rizinorg/rizin.git
+        tag: v0.7.1
+  - name: cutter
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DCUTTER_USE_BUNDLED_RIZIN=OFF
+      - -DCUTTER_ENABLE_PYTHON=ON
+    sources:
+      - type: git
+        url: https://github.com/rizinorg/cutter.git
+        tag: v2.3.4

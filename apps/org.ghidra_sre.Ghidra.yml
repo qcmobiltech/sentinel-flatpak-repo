@@ -1,0 +1,20 @@
+app-id: org.ghidra_sre.Ghidra
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: ghidra
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --socket=wayland
+  - --filesystem=host:ro
+  - --device=dri
+modules:
+  - name: openjdk
+    buildsystem: simple
+    build-commands:
+      - echo "Installing Java runtime..."
+  - name: ghidra
+    buildsystem: simple
+    build-commands:
+      - install -Dm755 ghidraRun /app/bin/ghidra

@@ -1,0 +1,28 @@
+app-id: org.sentinel.SupvanPrinting
+runtime: org.freedesktop.Platform
+runtime-version: '24.08'
+sdk: org.freedesktop.Sdk
+command: supvan-printer-app
+finish-args:
+  # Hardware Driver Subsystem Confinement: CUPS spooler, USB HID raw device & Bluetooth RFCOMM
+  - --share=ipc
+  - --share=network
+  - --device=all
+  - --system-talk-name=org.freedesktop.Avahi
+  - --system-talk-name=org.cups.cupsd
+  - --system-talk-name=org.bluez
+  - --filesystem=/etc/cups:ro
+  - --filesystem=/run/cups
+  - --filesystem=xdg-run/cups
+  - --filesystem=/var/run/cups
+modules:
+  - name: sentinel-supvan-cups
+    buildsystem: simple
+    build-commands:
+      - install -D -m755 bin/supvan-printer-app /app/bin/supvan-printer-app
+      - install -D -m755 bin/supvan-cli /app/bin/supvan-cli
+    sources:
+      - type: file
+        path: bin/supvan-printer-app
+      - type: file
+        path: bin/supvan-cli

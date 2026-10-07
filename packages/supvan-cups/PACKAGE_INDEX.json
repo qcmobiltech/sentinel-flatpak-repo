@@ -1,0 +1,31 @@
+{
+  "framework_version": "2027.0.0",
+  "api_version": "1.0.0",
+  "architecture": "x86_64",
+  "packages": {
+    "sentinel-supvan-cups": {
+      "archive": "sentinel-supvan-cups-0.5.1-x86_64.spk",
+      "signature": "sentinel-supvan-cups-0.5.1-x86_64.spk.sig",
+      "version": "0.5.1",
+      "type": "hardware-driver",
+      "description": "Official Katasymbol & Supvan T50/T50M Pro Thermal Label Printer Driver Application (IPP Everywhere port 8631, USB HID, and Bluetooth)",
+      "security_realm": "UserRealm",
+      "app_id": "org.sentinel.SupvanPrinting",
+      "supported_hardware": [
+        "Katasymbol T50 Pro",
+        "Supvan T50M Pro",
+        "Supvan T50",
+        "Supvan T50 Plus",
+        "Supvan T50s",
+        "Supvan E10"
+      ],
+      "dependencies": [
+        "cups-libs>=2.4",
+        "avahi-daemon",
+        "libusb-1.0-0"
+      ],
+      "sha256": "85ff8ee0db83c260b28c377f4de365a34de00e4cc4da6a0a8bb6734ad1e12bf7",
+      "size_bytes": 4823591
+    }
+  }
+}

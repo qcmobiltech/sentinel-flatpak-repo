@@ -29,6 +29,7 @@ modules:
       - install -Dm644 packaging/org.sentinel.PartitionManager.desktop /app/share/applications/org.sentinel.PartitionManager.desktop
       - install -Dm644 packaging/org.sentinel.PartitionManager.metainfo.xml /app/share/metainfo/org.sentinel.PartitionManager.metainfo.xml
       - install -Dm644 assets/org.sentinel.PartitionManager.svg /app/share/icons/hicolor/scalable/apps/org.sentinel.PartitionManager.svg
+      - install -Dm644 assets/app-logo.png /app/share/icons/hicolor/512x512/apps/org.sentinel.PartitionManager.png
     sources:
       - type: dir
         path: ../../

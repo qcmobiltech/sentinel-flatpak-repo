@@ -4,18 +4,18 @@
   "architecture": "x86_64",
   "packages": {
     "sentinel-office": {
-      "archive": "sentinel-office-1.0.0-x86_64.spk",
-      "version": "1.0.0",
+      "archive": "sentinel-office-1.1.0-x86_64.spk",
+      "version": "1.1.0",
       "type": "application",
-      "description": "Official Sentinel Office Suite for Sentinel Linux (Native Rust + Slint verified productivity suite featuring Writer, Sheets, Present, PDF, Publisher, Vector, and Studio with zero dummy data, dynamic system font discovery, and Sentinel Engineer OS auto-unlock)",
+      "description": "Official Sentinel Office Suite for Sentinel Linux (Native Rust + Slint verified productivity suite featuring Writer, Sheets, Present, PDF, Typeset, Vector, and Studio with zero dummy data, dynamic system font discovery, and YubiKey Enterprise / Engineer hardware unlock)",
       "security_realm": "OfficeRealm",
       "app_id": "org.sentinel.Office",
       "dependencies": [
         "sentinel-platform-base",
         "fontconfig"
       ],
-      "sha256": "59ed5177db9546364dc5711c7c82bacc72b4ec4c219379479eaa9738e8b284d1",
-      "size_bytes": 10160143
+      "sha256": "e8500e8aeeacc1f3365a133ab3eee117b2394b4ae676123fd04f77b84ff3533f",
+      "size_bytes": 9145223
     }
   }
 }

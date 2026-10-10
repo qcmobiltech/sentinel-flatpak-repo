@@ -19,9 +19,9 @@ modules:
   - name: sentinel-office
     buildsystem: simple
     build-commands:
-      - tar -zxvf sentinel-office-1.0.0-x86_64.spk
+      - tar -zxvf sentinel-office-1.1.0-x86_64.spk
       - install -D -m755 usr/bin/sentinel-office /app/bin/sentinel-office
       - cp -r usr/share/* /app/share/
     sources:
       - type: file
-        path: ../packages/office/sentinel-office-1.0.0-x86_64.spk
+        path: ../packages/office/sentinel-office-1.1.0-x86_64.spk
